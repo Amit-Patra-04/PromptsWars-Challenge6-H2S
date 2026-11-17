@@ -1,0 +1,3568 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UI Rendering & Component Snapshot Tests > renders GreenerAlternatives section with simulator and matches snapshot 1`] = `
+<div>
+  <section
+    class="py-700 px-100 max-w-6xl mx-auto border-t border-border-subtle scroll-mt-900"
+    id="greener-swaps"
+  >
+    <div
+      class="text-center max-w-2xl mx-auto mb-500"
+    >
+      <div
+        class="inline-flex items-center gap-50 bg-surface-2 border border-border-subtle rounded-full px-100 py-25 mb-150"
+      >
+        <svg
+          class="text-white"
+          fill="currentColor"
+          height="14"
+          viewBox="0 0 256 256"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M199,125.31l-49.88-18.39L130.69,57a19.92,19.92,0,0,0-37.38,0L74.92,106.92,25,125.31a19.92,19.92,0,0,0,0,37.38l49.88,18.39L93.31,231a19.92,19.92,0,0,0,37.38,0l18.39-49.88L199,162.69a19.92,19.92,0,0,0,0-37.38Zm-63.38,35.16a12,12,0,0,0-7.11,7.11L112,212.28l-16.47-44.7a12,12,0,0,0-7.11-7.11L43.72,144l44.7-16.47a12,12,0,0,0,7.11-7.11L112,75.72l16.47,44.7a12,12,0,0,0,7.11,7.11L180.28,144ZM140,40a12,12,0,0,1,12-12h12V16a12,12,0,0,1,24,0V28h12a12,12,0,0,1,0,24H188V64a12,12,0,0,1-24,0V52H152A12,12,0,0,1,140,40ZM252,88a12,12,0,0,1-12,12h-4v4a12,12,0,0,1-24,0v-4h-4a12,12,0,0,1,0-24h4V72a12,12,0,0,1,24,0v4h4A12,12,0,0,1,252,88Z"
+          />
+        </svg>
+        <span
+          class="caption-4 text-neutral-300"
+        >
+          Quantified Carbon & Pollution Abatement
+        </span>
+      </div>
+      <h2
+        class="heading-3 text-white tracking-tight mb-100"
+      >
+        Sustainable Swaps & Greener Alternatives
+      </h2>
+      <p
+        class="body-3 text-neutral-400"
+      >
+        Enumerate high impact lifestyle and energy swaps. Every recommendation is paired with an exact quantitative calculation grounded in United States EPA emission factors.
+      </p>
+    </div>
+    <div
+      class="bg-surface-1 border border-border-default rounded-2xl p-250 md:p-300 mb-400 relative overflow-hidden"
+    >
+      <div
+        class="flex items-center justify-between pb-150 mb-200 border-b border-border-subtle"
+      >
+        <div
+          class="flex items-center gap-75"
+        >
+          <svg
+            class="text-white"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 256 256"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M68,102.06V40a12,12,0,0,0-24,0v62.06a36,36,0,0,0,0,67.88V216a12,12,0,0,0,24,0V169.94a36,36,0,0,0,0-67.88ZM56,148a12,12,0,1,1,12-12A12,12,0,0,1,56,148ZM164,88a36.07,36.07,0,0,0-24-33.94V40a12,12,0,0,0-24,0V54.06a36,36,0,0,0,0,67.88V216a12,12,0,0,0,24,0V121.94A36.07,36.07,0,0,0,164,88Zm-36,12a12,12,0,1,1,12-12A12,12,0,0,1,128,100Zm108,68a36.07,36.07,0,0,0-24-33.94V40a12,12,0,0,0-24,0v94.06a36,36,0,0,0,0,67.88V216a12,12,0,0,0,24,0V201.94A36.07,36.07,0,0,0,236,168Zm-36,12a12,12,0,1,1,12-12A12,12,0,0,1,200,180Z"
+            />
+          </svg>
+          <span
+            class="title-2 text-white"
+          >
+            Personalized Carbon Abatement Simulator
+          </span>
+        </div>
+        <span
+          class="caption-4 text-emerald-400 font-mono"
+        >
+          EPA 404 G/MILE BENCHMARK
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-300 items-center"
+      >
+        <div
+          class="lg:col-span-7 flex flex-col gap-200"
+        >
+          <div>
+            <div
+              class="flex justify-between items-center mb-50"
+            >
+              <label
+                class="caption-3 text-neutral-300"
+              >
+                Round Trip Commute Distance
+              </label>
+              <span
+                class="font-mono text-sm text-white"
+              >
+                15
+                 miles (
+                24
+                 km)
+              </span>
+            </div>
+            <input
+              aria-label="Commute distance in miles"
+              class="w-full accent-white"
+              max="45"
+              min="5"
+              step="1"
+              type="range"
+              value="15"
+            />
+            <span
+              class="caption-5 text-neutral-500 mt-25 block"
+            >
+              EPA Mobile Factor: Solo car emits 404 grams CO2 per mile (0.404 kg CO2e/mile).
+            </span>
+          </div>
+          <div>
+            <div
+              class="flex justify-between items-center mb-50"
+            >
+              <label
+                class="caption-3 text-neutral-300"
+              >
+                Daily Kerosene or Space Heating Hours
+              </label>
+              <span
+                class="font-mono text-sm text-white"
+              >
+                6
+                 hours per winter day
+              </span>
+            </div>
+            <input
+              aria-label="Heating hours per day"
+              class="w-full accent-white"
+              max="14"
+              min="2"
+              step="1"
+              type="range"
+              value="6"
+            />
+            <span
+              class="caption-5 text-neutral-500 mt-25 block"
+            >
+              EPA Combustion Factor: Unvented kerosene heater emits 0.52 kg CO2e per operational hour.
+            </span>
+          </div>
+        </div>
+        <div
+          class="lg:col-span-5 bg-surface-2 border border-border-subtle rounded-xl p-200 flex flex-col justify-between"
+        >
+          <span
+            class="caption-5 text-neutral-400 block mb-25"
+          >
+            YOUR PROJECTED ABATEMENT
+          </span>
+          <div
+            class="flex items-baseline gap-100 mb-100"
+          >
+            <span
+              class="text-4xl font-mono font-semibold text-emerald-400"
+            >
+              4.85
+               kg
+            </span>
+            <span
+              class="caption-3 text-neutral-300"
+            >
+              CO2e saved daily
+            </span>
+          </div>
+          <div
+            class="bg-surface-3 border border-border-subtle rounded-lg p-100 mb-150"
+          >
+            <span
+              class="caption-5 text-neutral-400 block mb-25"
+            >
+              ANNUAL CUMULATIVE IMPACT
+            </span>
+            <span
+              class="text-2xl font-mono font-medium text-white"
+            >
+              1212.5
+               kg CO2e / year
+            </span>
+            <span
+              class="caption-5 text-neutral-400 block mt-25"
+            >
+              equivalent to planting ~
+              58
+               urban trees
+            </span>
+          </div>
+          <div
+            class="caption-3 text-neutral-200 font-medium"
+          >
+            <span
+              class="text-emerald-400 mr-25"
+            >
+              Summary:
+            </span>
+            <span>
+              Switch to electric subway rail or zero emission bus rapid transit ➞ ~4.85 kg CO2e saved per day (55 µg in-cabin tailpipe PM2.5 and NO2 avoided)
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-wrap items-center gap-50 mb-400"
+    >
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-white text-black border-white font-semibold"
+        type="button"
+      >
+        All Sustainable Swaps
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Commute & Travel
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Home Heating
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Cooking Stoves
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Plant Cleaners
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Thermostats & Energy
+      </button>
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-300 items-start"
+    >
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-amber-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M212,52a32,32,0,1,0,32,32A32,32,0,0,0,212,52Zm0,40a8,8,0,1,1,8-8A8,8,0,0,1,212,92ZM160,56A52,52,0,0,0,56,56v94.69a64,64,0,1,0,104,0ZM108,228a40,40,0,0,1-30.91-65.39A12,12,0,0,0,80,154.78V56a28,28,0,0,1,56,0v98.77a12,12,0,0,0,2.77,7.68A40,40,0,0,1,108,228Zm24-40a24,24,0,1,1-36-20.78V92a12,12,0,0,1,24,0v75.22A24,24,0,0,1,132,188Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              0.52
+               
+              kg CO2e per hour of heating
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Electric Heat Pump or Ceramic Radiant vs Kerosene Space Heater
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Switch from unvented kerosene to electric heat pump ➞ ~0.52 kg CO2e saved per hour & eliminates 45 µg/m³ indoor soot
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Operating unvented portable kerosene or gas space heater
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Switch to high efficiency electric heat pump or sealed ceramic radiant heater
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              45 µg/m³ PM2.5 & 100% carbon monoxide eliminated
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                Unvented kerosene heater consumes approx 0.2 liters fuel per hour emitting 0.52 kg CO2 directly.
+              </li>
+              <li>
+                Electric heat pump with COP 3.2 on modern grid abates over 60% of lifecycle emissions.
+              </li>
+              <li>
+                Eliminates direct indoor emissions of carbon monoxide, nitrogen dioxide, and sulfur dioxide.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            EPA AP-42 Unvented Kerosene Combustion Factor (0.257 kg CO2/kWh thermal)
+          </span>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-orange-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177.62,159.6a52,52,0,0,1-34,34,12.2,12.2,0,0,1-3.6.55,12,12,0,0,1-3.6-23.45,28,28,0,0,0,18.32-18.32,12,12,0,0,1,22.9,7.2ZM220,144a92,92,0,0,1-184,0c0-28.81,11.27-58.18,33.48-87.28a12,12,0,0,1,17.9-1.33L107.07,74.5,127,19.89a12,12,0,0,1,18.94-5.12C168.2,33.25,220,82.85,220,144Zm-24,0c0-41.71-30.61-78.39-52.52-99.29l-20.21,55.4a12,12,0,0,1-19.63,4.5L80.71,82.36C67,103.38,60,124.06,60,144a68,68,0,0,0,136,0Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              3.6
+               
+              kg CO2e saved per day
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            LPG or Electric Induction vs Traditional Biomass Cookstove
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Switch from biomass cookstove to LPG or induction ➞ ~180 µg/m³ indoor PM2.5 reduction & 3.6 kg CO2e avoided daily
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Cooking meals with wood, dung cake, or raw biomass fuel
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Switch to LPG gas cylinder stove or electric magnetic induction cooktop
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              180 µg/m³ indoor PM2.5 reduction (~85% drop)
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                Displacing 5 kg of firewood combustion per family cooking day avoids 3.6 kg net CO2e.
+              </li>
+              <li>
+                Indoor particulate concentrations drop from &gt; 250 µg/m³ to under 35 µg/m³.
+              </li>
+              <li>
+                Substantially mitigates black carbon soot deposition in local urban airshed.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            WHO Indoor Air Guidelines & EPA AP-42 Residential Biomass Factor (120g PM2.5/day)
+          </span>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-orange-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177.62,159.6a52,52,0,0,1-34,34,12.2,12.2,0,0,1-3.6.55,12,12,0,0,1-3.6-23.45,28,28,0,0,0,18.32-18.32,12,12,0,0,1,22.9,7.2ZM220,144a92,92,0,0,1-184,0c0-28.81,11.27-58.18,33.48-87.28a12,12,0,0,1,17.9-1.33L107.07,74.5,127,19.89a12,12,0,0,1,18.94-5.12C168.2,33.25,220,82.85,220,144Zm-24,0c0-41.71-30.61-78.39-52.52-99.29l-20.21,55.4a12,12,0,0,1-19.63,4.5L80.71,82.36C67,103.38,60,124.06,60,144a68,68,0,0,0,136,0Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              0.38
+               
+              kg CO2e saved per cooking day
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Electric Magnetic Induction vs Natural Gas Cooktop
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Switch from natural gas cooktop to induction ➞ ~190 µg/m³ NO2 spike eliminated & 0.38 kg CO2e saved per cooking day
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Cooking on standard natural gas flame burner
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Switch to electric magnetic induction cooktop
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              190 µg/m³ nitrogen dioxide peak spike eliminated
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                Induction transfers 84% of electrical energy into the pan versus only 40% for gas flames.
+              </li>
+              <li>
+                Completely eliminates in room combustion nitrogen dioxide and benzene emissions.
+              </li>
+              <li>
+                Displaces 1.8 kWh equivalent of fossil gas combustion per daily family meal cycle.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            LBNL & EPA Residential Cooking Study: Gas stoves exceed NAAQS NO2 standards within 20 minutes
+          </span>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-sky-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M237.24,213.21C216.12,203,204,180.64,204,152V134.73a19.94,19.94,0,0,0-12.62-18.59l-24.86-9.81a4,4,0,0,1-2.26-5.14l21.33-53A32,32,0,0,0,167.17,6,32.13,32.13,0,0,0,126.25,24.2l-.07.18-21,53.09a3.94,3.94,0,0,1-2.14,2.2,3.89,3.89,0,0,1-3,.06L74.6,69.43A19.89,19.89,0,0,0,52.87,74C31.06,96.43,20,122.68,20,152a115.46,115.46,0,0,0,32.29,80.3A12,12,0,0,0,61,236H232a12,12,0,0,0,5.24-22.79ZM68.19,92.73,91.06,102A28,28,0,0,0,127.5,86.31l20.95-53a8.32,8.32,0,0,1,10.33-4.81,8,8,0,0,1,4.61,10.57,1.17,1.17,0,0,0,0,.11L142,92.29a28.05,28.05,0,0,0,15.68,36.33L180,137.45V152c0,1,0,2.07.05,3.1l-122.44-49A101.91,101.91,0,0,1,68.19,92.73ZM116.74,212a83.73,83.73,0,0,1-22.09-39,12,12,0,0,0-23.25,6,110.27,110.27,0,0,0,14.49,33H66.25A91.53,91.53,0,0,1,44,152a84,84,0,0,1,3.41-24.11l136.67,54.66A86.58,86.58,0,0,0,198.66,212Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              0.18
+               
+              kg CO2e saved per cleaning cycle
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Plant-Based Non-Aerosol Cleaners vs Solvent Cleaners
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Switch to plant based non aerosol cleaning products ➞ ~720 µg/m³ VOC reduction & prevents secondary aerosol formation
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Using aerosol petroleum distillates and chlorine bleach sprays
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Switch to plant based non aerosol surfactants and microfiber cloths
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              720 µg/m³ volatile organic compound (VOC) reduction
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                Eliminates aerosol propellant hydrocarbons and synthetic terpenes that react with indoor ozone.
+              </li>
+              <li>
+                Reduces total volatile organic compound loading in indoor air by over 85%.
+              </li>
+              <li>
+                Plant based ingredients carry a 45% lower cradle to gate manufacturing carbon footprint.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            EPA Safer Choice Standard & Indoor VOC Characterization Study
+          </span>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-emerald-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M240,100h-8.2L205.08,39.88A20,20,0,0,0,186.8,28H69.2A20,20,0,0,0,50.92,39.88L24.2,100H16a12,12,0,0,0,0,24h4v76a20,20,0,0,0,20,20H68a20,20,0,0,0,20-20V180h80v20a20,20,0,0,0,20,20h28a20,20,0,0,0,20-20V124h4a12,12,0,0,0,0-24ZM71.8,52H184.2l21.33,48H50.47ZM64,196H44V180H64Zm128,0V180h20v16Zm20-40H44V124H212Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              4.85
+               
+              kg CO2e saved per 15-mile round trip
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Electric Metro Transit vs Solo Gasoline Commute
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Switch from solo gasoline car to electric metro rail ➞ ~4.85 kg CO2e saved per 15 mile commute & 55 µg in cabin exhaust avoided
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Driving solo in gasoline passenger automobile
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Switch to electric subway rail or zero emission bus rapid transit
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              55 µg in-cabin tailpipe PM2.5 and NO2 avoided
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                15-mile round trip solo car commute produces 6.06 kg CO2e (404 g/mile factor).
+              </li>
+              <li>
+                Electric metro rail consumes 0.08 kWh/passenger-mile, yielding 1.21 kg CO2e net.
+              </li>
+              <li>
+                Driver avoids breathing concentrated bumper-to-bumper tailpipe plumes.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            US EPA Office of Transportation (EPA-420-F-23-014): 404 g CO2 per vehicle mile
+          </span>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-emerald-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M240,100h-8.2L205.08,39.88A20,20,0,0,0,186.8,28H69.2A20,20,0,0,0,50.92,39.88L24.2,100H16a12,12,0,0,0,0,24h4v76a20,20,0,0,0,20,20H68a20,20,0,0,0,20-20V180h80v20a20,20,0,0,0,20,20h28a20,20,0,0,0,20-20V124h4a12,12,0,0,0,0-24ZM71.8,52H184.2l21.33,48H50.47ZM64,196H44V180H64Zm128,0V180h20v16Zm20-40H44V124H212Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              4.02
+               
+              kg CO2e saved per 15-mile commute
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Three-Person Carpool vs Solo Driving
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Switch from solo driving to three person carpool ➞ ~4.02 kg CO2e saved per round trip & cuts neighborhood tailpipe plume by 67%
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Single occupancy private vehicle travel
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Form or join a three person neighborhood carpool
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              67% drop in localized street-level vehicle emissions
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                Tripling vehicle occupancy splits 6.06 kg CO2e between 3 riders.
+              </li>
+              <li>
+                Saves 4.02 kg CO2e per participant per 15-mile round trip commute.
+              </li>
+              <li>
+                Reduces vehicular traffic congestion delays that exacerbate winter thermal inversion pooling.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            EPA SmartWay Transport Partnership Passenger Car Emissions Guide
+          </span>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-lime-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M233.47,184.63,192.54,132H208a12,12,0,0,0,9.51-19.32l-80-104a12,12,0,0,0-19,0l-80,104A12,12,0,0,0,48,132H63.46L22.53,184.63A12,12,0,0,0,32,204h84v36a12,12,0,0,0,24,0V204h84a12,12,0,0,0,9.47-19.37ZM56.54,180l40.93-52.63A12,12,0,0,0,88,108H72.37L128,35.68,183.63,108H168a12,12,0,0,0-9.47,19.37L199.46,180Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              1.4
+               
+              kg CO2e saved per night
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Overnight Thermostat Setback with Thermal Blankets
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Set thermostat 2°C lower overnight with thermal layering ➞ ~1.40 kg CO2e saved per night & reduces neighborhood stack emissions
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Maintaining constant 22°C (72°F) heating all night
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Set thermostat 2°C lower overnight with thermal layering and hot water bottles
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              7% reduction in furnace flue gas NOx and fine soot
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                Each 1°C reduction over 8 hours yields a 3% to 4% reduction in space heating fuel consumption.
+              </li>
+              <li>
+                Displaces 6.9 kWh equivalent of boiler gas heating in an average 100 m² apartment.
+              </li>
+              <li>
+                Cuts domestic stack emissions during coldest dawn hours when inversion trapping is most intense.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            US EPA Energy Star & Department of Energy Residential Heating Setback Rules
+          </span>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-lime-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M233.47,184.63,192.54,132H208a12,12,0,0,0,9.51-19.32l-80-104a12,12,0,0,0-19,0l-80,104A12,12,0,0,0,48,132H63.46L22.53,184.63A12,12,0,0,0,32,204h84v36a12,12,0,0,0,24,0V204h84a12,12,0,0,0,9.47-19.37ZM56.54,180l40.93-52.63A12,12,0,0,0,88,108H72.37L128,35.68,183.63,108H168a12,12,0,0,0-9.47,19.37L199.46,180Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              +
+              1.8
+               
+              kg CO2e saved per evening
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Ceramic Infrared Zone Heating vs Wood Fireplace
+          </h3>
+          <div
+            class="bg-surface-2 border border-emerald-900/60 rounded-xl p-150 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-emerald-400 block mb-50 uppercase tracking-wider"
+            >
+              Annotated Quantitative Impact
+            </span>
+            <p
+              class="body-4 text-white font-semibold leading-relaxed"
+            >
+              Switch decorative fire hearth to infrared zone heating ➞ ~65 µg/m³ PM2.5 reduction & 1.80 kg CO2e saved per evening
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-100 mb-150 text-xs font-mono"
+          >
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-neutral-500 block mb-25 uppercase"
+              >
+                Current Habit
+              </span>
+              <span
+                class="text-neutral-300 font-sans caption-4"
+              >
+                Burning logs or decorative ethanol fire pots in open hearth
+              </span>
+            </div>
+            <div
+              class="bg-surface-2 p-100 rounded-lg border border-border-subtle"
+            >
+              <span
+                class="caption-5 text-emerald-400 block mb-25 uppercase"
+              >
+                Sustainable Swap
+              </span>
+              <span
+                class="text-white font-sans caption-4"
+              >
+                Switch to ceramic infrared spot heating panels
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-50 caption-3 text-neutral-300 mb-150"
+          >
+            <svg
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 256 256"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+            <span>
+              Air Pollution Cut: 
+              65 µg/m³ indoor particulate reduction (100% open flame eliminated)
+            </span>
+          </div>
+          <div
+            class="mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              SCIENTIFIC ASSUMPTIONS:
+            </span>
+            <ul
+              class="space-y-25 caption-5 text-neutral-400 list-disc list-inside"
+            >
+              <li>
+                Open wood fireplaces have negative thermal efficiency, pulling cold air through exterior cracks.
+              </li>
+              <li>
+                Eliminates dangerous polycyclic aromatic hydrocarbons (PAHs) and soot from the living space.
+              </li>
+              <li>
+                Infrared panels heat occupants directly with 400W versus 3000W wasted fire output.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-100 border-t border-border-subtle flex items-center gap-50 caption-5 text-neutral-500 font-mono"
+        >
+          <svg
+            class="text-neutral-400 shrink-0"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 256 256"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+            />
+          </svg>
+          <span>
+            Factor: 
+            EPA Burn Wise Guidance & AP-42 Fireplace Emission Factors
+          </span>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`UI Rendering & Component Snapshot Tests > renders IndoorAirAdvice section with EPA 2-5x callout and matches snapshot 1`] = `
+<div>
+  <section
+    class="py-700 px-100 max-w-6xl mx-auto border-t border-border-subtle scroll-mt-900"
+    id="indoor-advice"
+  >
+    <div
+      class="text-center max-w-2xl mx-auto mb-500"
+    >
+      <div
+        class="inline-flex items-center gap-50 bg-surface-2 border border-border-subtle rounded-full px-100 py-25 mb-150"
+      >
+        <svg
+          class="text-white"
+          fill="currentColor"
+          height="14"
+          viewBox="0 0 256 256"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M208,36H48A20,20,0,0,0,28,56v56c0,54.29,26.32,87.22,48.4,105.29,23.71,19.39,47.44,26,48.44,26.29a12.1,12.1,0,0,0,6.32,0c1-.28,24.73-6.9,48.44-26.29,22.08-18.07,48.4-51,48.4-105.29V56A20,20,0,0,0,208,36Zm-4,76c0,35.71-13.09,64.69-38.91,86.15A126.28,126.28,0,0,1,128,219.38a126.14,126.14,0,0,1-37.09-21.23C65.09,176.69,52,147.71,52,112V60H204ZM79.51,144.49a12,12,0,1,1,17-17L112,143l47.51-47.52a12,12,0,0,1,17,17l-56,56a12,12,0,0,1-17,0Z"
+          />
+        </svg>
+        <span
+          class="caption-4 text-neutral-300"
+        >
+          EPA & WHO Clean Air Science
+        </span>
+      </div>
+      <h2
+        class="heading-3 text-white tracking-tight mb-100"
+      >
+        Winter Indoor Air Quality Hacks
+      </h2>
+      <p
+        class="body-3 text-neutral-400"
+      >
+        Authoritative indoor protection protocols cross referencing United States Environmental Protection Agency guidance and peer reviewed building physics.
+      </p>
+    </div>
+    <div
+      class="bg-surface-1 border border-border-default rounded-2xl p-250 md:p-300 mb-400 relative overflow-hidden"
+    >
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-200"
+      >
+        <div
+          class="max-w-2xl"
+        >
+          <div
+            class="flex items-center gap-75 mb-75"
+          >
+            <span
+              class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"
+            />
+            <span
+              class="caption-4 font-mono text-amber-300 uppercase tracking-wider"
+            >
+              Authoritative EPA Science Finding
+            </span>
+          </div>
+          <h3
+            class="heading-5 text-white mb-75"
+          >
+            Indoor air can be 2 to 5 times more polluted than outdoor air
+          </h3>
+          <p
+            class="body-4 text-neutral-300 mb-100"
+          >
+            During winter months, families tightly seal windows and doors to preserve indoor heat. Without deliberate mechanical exhaust and active filtration, indoor generated emissions from cooking, gas heaters, and dry cleaning accumulate into dangerous concentrations.
+          </p>
+          <div
+            class="caption-5 text-neutral-400 font-mono"
+          >
+            Citation: 
+            EPA Care for Your Air: A Guide to Indoor Air Quality (EPA 402/F-08/008)
+          </div>
+        </div>
+        <div
+          class="bg-surface-2 border border-border-subtle rounded-xl p-150 shrink-0 w-full md:w-auto text-center md:text-left"
+        >
+          <span
+            class="caption-5 text-neutral-400 block mb-25"
+          >
+            EXTREME WINTER SPIKE
+          </span>
+          <span
+            class="text-3xl font-mono font-semibold text-amber-400"
+          >
+            10x to 100x
+          </span>
+          <span
+            class="caption-5 text-neutral-300 block mt-25 max-w-[200px]"
+          >
+            indoor pollutant levels recorded during unvented cooking or kerosene heating
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-surface-1 border border-border-subtle rounded-xl p-150 mb-300 flex flex-wrap items-center justify-between gap-100"
+    >
+      <div
+        class="flex items-center gap-75"
+      >
+        <svg
+          class="text-white shrink-0"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 256 256"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M68,102.06V40a12,12,0,0,0-24,0v62.06a36,36,0,0,0,0,67.88V216a12,12,0,0,0,24,0V169.94a36,36,0,0,0,0-67.88ZM56,148a12,12,0,1,1,12-12A12,12,0,0,1,56,148ZM164,88a36.07,36.07,0,0,0-24-33.94V40a12,12,0,0,0-24,0V54.06a36,36,0,0,0,0,67.88V216a12,12,0,0,0,24,0V121.94A36.07,36.07,0,0,0,164,88Zm-36,12a12,12,0,1,1,12-12A12,12,0,0,1,128,100Zm108,68a36.07,36.07,0,0,0-24-33.94V40a12,12,0,0,0-24,0v94.06a36,36,0,0,0,0,67.88V216a12,12,0,0,0,24,0V201.94A36.07,36.07,0,0,0,236,168Zm-36,12a12,12,0,1,1,12-12A12,12,0,0,1,200,180Z"
+          />
+        </svg>
+        <span
+          class="caption-2 text-white font-medium"
+        >
+          Tailor Hacks to Household Risks:
+        </span>
+      </div>
+      <div
+        class="flex flex-wrap items-center gap-75"
+      >
+        <button
+          class="py-50 px-75 rounded-lg border caption-3 transition-all duration-300 bg-surface-3 border-white text-white font-medium"
+          type="button"
+        >
+          Gas Cooktop Present
+        </button>
+        <button
+          class="py-50 px-75 rounded-lg border caption-3 transition-all duration-300 bg-surface-2 border-border-subtle text-neutral-400 hover:text-white"
+          type="button"
+        >
+          Gas or Fuel Heating
+        </button>
+        <button
+          class="py-50 px-75 rounded-lg border caption-3 transition-all duration-300 bg-surface-3 border-white text-white font-medium"
+          type="button"
+        >
+          Infants or Elderly at Home
+        </button>
+      </div>
+    </div>
+    <div
+      class="flex flex-wrap items-center gap-50 mb-400"
+    >
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-white text-black border-white font-semibold"
+        type="button"
+      >
+        All Winter Hacks
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        HEPA & Clean Rooms
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Cooking & Exhaust
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Heaters & Combustion
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Damp Cleaning
+      </button>
+      <button
+        class="py-50 px-100 rounded-full border caption-3 transition-all duration-300 bg-surface-1 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-2"
+        type="button"
+      >
+        Humidity Balance
+      </button>
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-300 items-start"
+    >
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-amber-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177.62,159.6a52,52,0,0,1-34,34,12.2,12.2,0,0,1-3.6.55,12,12,0,0,1-3.6-23.45,28,28,0,0,0,18.32-18.32,12,12,0,0,1,22.9,7.2ZM220,144a92,92,0,0,1-184,0c0-28.81,11.27-58.18,33.48-87.28a12,12,0,0,1,17.9-1.33L107.07,74.5,127,19.89a12,12,0,0,1,18.94-5.12C168.2,33.25,220,82.85,220,144Zm-24,0c0-41.71-30.61-78.39-52.52-99.29l-20.21,55.4a12,12,0,0,1-19.63,4.5L80.71,82.36C67,103.38,60,124.06,60,144a68,68,0,0,0,136,0Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              Avoids 150 µg/m³ peak soot
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Eliminate indoor burning of scented candles, incense, and decorative hearths
+          </h3>
+          <div
+            class="bg-surface-2 border border-border-subtle rounded-xl p-100 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              VERIFIED DIRECT IMPACT
+            </span>
+            <p
+              class="body-4 text-white font-medium"
+            >
+              Extinguishing scented candles and incense sticks prevents indoor particulate counts from spiking above 150 µg/m³ in enclosed living spaces.
+            </p>
+          </div>
+          <div
+            class="mb-200"
+          >
+            <span
+              class="caption-4 text-neutral-300 font-medium block mb-50"
+            >
+              Execution Protocol:
+            </span>
+            <ul
+              class="space-y-50 caption-4 text-neutral-300"
+            >
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Discontinue burning scented paraffin candles, religious incense sticks, or decorative ethanol fire pots.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  If utilizing a certified wood stove, ensure it meets EPA NSPS Phase 2 emission limits with tightly latched gasketed glass doors.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Substitute open flames with warm LED mood lighting or sealed warming pads.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-150 border-t border-border-subtle flex flex-col gap-50 caption-5 text-neutral-400"
+        >
+          <div
+            class="flex items-center gap-50"
+          >
+            <svg
+              class="text-neutral-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Source: 
+              US EPA Air Pollution Control Division Particulate Characterization Report
+            </span>
+          </div>
+          <p
+            class="text-neutral-500"
+          >
+            Winter Context: 
+            A single burning incense stick can emit fine particulates at a rate comparable to multiple cigarettes, trapped indefinitely by winter insulation.
+          </p>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-amber-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177.62,159.6a52,52,0,0,1-34,34,12.2,12.2,0,0,1-3.6.55,12,12,0,0,1-3.6-23.45,28,28,0,0,0,18.32-18.32,12,12,0,0,1,22.9,7.2ZM220,144a92,92,0,0,1-184,0c0-28.81,11.27-58.18,33.48-87.28a12,12,0,0,1,17.9-1.33L107.07,74.5,127,19.89a12,12,0,0,1,18.94-5.12C168.2,33.25,220,82.85,220,144Zm-24,0c0-41.71-30.61-78.39-52.52-99.29l-20.21,55.4a12,12,0,0,1-19.63,4.5L80.71,82.36C67,103.38,60,124.06,60,144a68,68,0,0,0,136,0Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              Over 90% combustion hazard eliminated
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Strictly avoid unvented kerosene and portable gas space heaters
+          </h3>
+          <div
+            class="bg-surface-2 border border-border-subtle rounded-xl p-100 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              VERIFIED DIRECT IMPACT
+            </span>
+            <p
+              class="body-4 text-white font-medium"
+            >
+              Banning unvented fuel space heaters eliminates direct indoor carbon monoxide emission and reduces peak indoor nitrogen dioxide spikes by over 90%.
+            </p>
+          </div>
+          <div
+            class="mb-200"
+          >
+            <span
+              class="caption-4 text-neutral-300 font-medium block mb-50"
+            >
+              Execution Protocol:
+            </span>
+            <ul
+              class="space-y-50 caption-4 text-neutral-300"
+            >
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Replace unvented kerosene or portable gas heaters with sealed electric oil radiators, ceramic radiant heaters, or central heat pumps.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Never use a gas cooking oven or stove range to heat residential rooms.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Install UL listed carbon monoxide alarms on every living level and outside all sleeping areas.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-150 border-t border-border-subtle flex flex-col gap-50 caption-5 text-neutral-400"
+        >
+          <div
+            class="flex items-center gap-50"
+          >
+            <svg
+              class="text-neutral-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Source: 
+              US EPA & US Consumer Product Safety Commission (CPSC) Advisory on Fuel Heaters
+            </span>
+          </div>
+          <p
+            class="text-neutral-500"
+          >
+            Winter Context: 
+            Unvented kerosene heaters release all combustion exhaust directly into closed winter living spaces, causing hazardous accumulations of carbon monoxide, soot, and moisture.
+          </p>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-emerald-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M236.85,134a64,64,0,0,0-87.43-42.11l14.22-56.77a12,12,0,0,0-5.17-13A64,64,0,0,0,86,127.52L29.72,143.59a12,12,0,0,0-8.69,11,64,64,0,0,0,127.56,10l42,40.7a12,12,0,0,0,13.86,2A64,64,0,0,0,236.85,134ZM116,128a12,12,0,1,1,12,12A12,12,0,0,1,116,128Zm8-92a40,40,0,0,1,14,2.53L124.6,92.17a36,36,0,0,0-25.85,14.88A40,40,0,0,1,124,36ZM105,192.1A40,40,0,0,1,45.5,164l53.18-15.19a36,36,0,0,0,25.8,15A39.84,39.84,0,0,1,105,192.1Zm104.7-21.56a39.92,39.92,0,0,1-9.21,10.89L160.73,143a35.9,35.9,0,0,0,.05-29.83,40,40,0,0,1,48.89,57.4Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              Up to 82% NO2 & aerosol cut
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Run range hood ventilation ducted outside during all cooking
+          </h3>
+          <div
+            class="bg-surface-2 border border-border-subtle rounded-xl p-100 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              VERIFIED DIRECT IMPACT
+            </span>
+            <p
+              class="body-4 text-white font-medium"
+            >
+              Running kitchen exhaust ducted outdoors reduces cooking generated ultrafine particulates and nitrogen dioxide spikes by up to 82%.
+            </p>
+          </div>
+          <div
+            class="mb-200"
+          >
+            <span
+              class="caption-4 text-neutral-300 font-medium block mb-50"
+            >
+              Execution Protocol:
+            </span>
+            <ul
+              class="space-y-50 caption-4 text-neutral-300"
+            >
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Turn on the range hood fan on high two minutes prior to lighting gas burners or heating cooking oils.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Cook predominantly on rear burners where exhaust capture efficiency is 20% to 30% higher than front burners.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Keep the fan running for 10 to 15 minutes following meal completion to exhaust residual sub micron oil aerosols.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-150 border-t border-border-subtle flex flex-col gap-50 caption-5 text-neutral-400"
+        >
+          <div
+            class="flex items-center gap-50"
+          >
+            <svg
+              class="text-neutral-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Source: 
+              US EPA & Lawrence Berkeley National Laboratory Residential Ventilation Study
+            </span>
+          </div>
+          <p
+            class="text-neutral-500"
+          >
+            Winter Context: 
+            Gas cooking without mechanical exhaust can generate indoor NO2 concentrations exceeding 300 µg/m³, which cannot disperse when windows are shut for winter cold.
+          </p>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-white"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M236.85,134a64,64,0,0,0-87.43-42.11l14.22-56.77a12,12,0,0,0-5.17-13A64,64,0,0,0,86,127.52L29.72,143.59a12,12,0,0,0-8.69,11,64,64,0,0,0,127.56,10l42,40.7a12,12,0,0,0,13.86,2A64,64,0,0,0,236.85,134ZM116,128a12,12,0,1,1,12,12A12,12,0,0,1,116,128Zm8-92a40,40,0,0,1,14,2.53L124.6,92.17a36,36,0,0,0-25.85,14.88A40,40,0,0,1,124,36ZM105,192.1A40,40,0,0,1,45.5,164l53.18-15.19a36,36,0,0,0,25.8,15A39.84,39.84,0,0,1,105,192.1Zm104.7-21.56a39.92,39.92,0,0,1-9.21,10.89L160.73,143a35.9,35.9,0,0,0,.05-29.83,40,40,0,0,1,48.89,57.4Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              Up to 70% infiltration reduction
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Establish a positive pressure clean room with silicone weatherstripping
+          </h3>
+          <div
+            class="bg-surface-2 border border-border-subtle rounded-xl p-100 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              VERIFIED DIRECT IMPACT
+            </span>
+            <p
+              class="body-4 text-white font-medium"
+            >
+              Sealing bedroom perimeter gaps and operating dedicated filtration reduces exterior winter smog infiltration into sleeping quarters by up to 70%.
+            </p>
+          </div>
+          <div
+            class="mb-200"
+          >
+            <span
+              class="caption-4 text-neutral-300 font-medium block mb-50"
+            >
+              Execution Protocol:
+            </span>
+            <ul
+              class="space-y-50 caption-4 text-neutral-300"
+            >
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Apply silicone or foam weatherstripping to interior bedroom window frames and door sweeps.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Keep bedroom doors closed with the air cleaner running continuously to maintain slight positive pressure.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Avoid opening clean room windows during morning inversion peaks between 6:00 AM and 11:00 AM.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-150 border-t border-border-subtle flex flex-col gap-50 caption-5 text-neutral-400"
+        >
+          <div
+            class="flex items-center gap-50"
+          >
+            <svg
+              class="text-neutral-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Source: 
+              US EPA & CDC Emergency Clean Room Technical Guidance
+            </span>
+          </div>
+          <p
+            class="text-neutral-500"
+          >
+            Winter Context: 
+            Protects cardiovascular and pulmonary recovery during the critical 7 to 8 hour sleep window when biological repair occurs.
+          </p>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-white"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M236.85,134a64,64,0,0,0-87.43-42.11l14.22-56.77a12,12,0,0,0-5.17-13A64,64,0,0,0,86,127.52L29.72,143.59a12,12,0,0,0-8.69,11,64,64,0,0,0,127.56,10l42,40.7a12,12,0,0,0,13.86,2A64,64,0,0,0,236.85,134ZM116,128a12,12,0,1,1,12,12A12,12,0,0,1,116,128Zm8-92a40,40,0,0,1,14,2.53L124.6,92.17a36,36,0,0,0-25.85,14.88A40,40,0,0,1,124,36ZM105,192.1A40,40,0,0,1,45.5,164l53.18-15.19a36,36,0,0,0,25.8,15A39.84,39.84,0,0,1,105,192.1Zm104.7-21.56a39.92,39.92,0,0,1-9.21,10.89L160.73,143a35.9,35.9,0,0,0,.05-29.83,40,40,0,0,1,48.89,57.4Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              65% to 85% PM2.5 reduction
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Deploy True HEPA filtration in primary living zones
+          </h3>
+          <div
+            class="bg-surface-2 border border-border-subtle rounded-xl p-100 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              VERIFIED DIRECT IMPACT
+            </span>
+            <p
+              class="body-4 text-white font-medium"
+            >
+              Continuous operation on medium speed removes 99.97% of airborne particles down to 0.3 microns, cutting room PM2.5 concentrations by 65% to 85% within 30 minutes.
+            </p>
+          </div>
+          <div
+            class="mb-200"
+          >
+            <span
+              class="caption-4 text-neutral-300 font-medium block mb-50"
+            >
+              Execution Protocol:
+            </span>
+            <ul
+              class="space-y-50 caption-4 text-neutral-300"
+            >
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Position the purifier centrally away from exterior walls and curtains to allow 360 degree intake circulation.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Maintain continuous medium speed operation during winter months rather than auto mode to combat constant building infiltration.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Inspect pre filters monthly and replace HEPA cartridges per manufacturer hours.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-150 border-t border-border-subtle flex flex-col gap-50 caption-5 text-neutral-400"
+        >
+          <div
+            class="flex items-center gap-50"
+          >
+            <svg
+              class="text-neutral-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Source: 
+              US EPA Residential Air Cleaners Technical Summary (EPA 402-F-09-002)
+            </span>
+          </div>
+          <p
+            class="text-neutral-500"
+          >
+            Winter Context: 
+            Compensates for sealed winter envelopes by providing constant mechanical clean air delivery without losing indoor warmth.
+          </p>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-sky-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M237.24,213.21C216.12,203,204,180.64,204,152V134.73a19.94,19.94,0,0,0-12.62-18.59l-24.86-9.81a4,4,0,0,1-2.26-5.14l21.33-53A32,32,0,0,0,167.17,6,32.13,32.13,0,0,0,126.25,24.2l-.07.18-21,53.09a3.94,3.94,0,0,1-2.14,2.2,3.89,3.89,0,0,1-3,.06L74.6,69.43A19.89,19.89,0,0,0,52.87,74C31.06,96.43,20,122.68,20,152a115.46,115.46,0,0,0,32.29,80.3A12,12,0,0,0,61,236H232a12,12,0,0,0,5.24-22.79ZM68.19,92.73,91.06,102A28,28,0,0,0,127.5,86.31l20.95-53a8.32,8.32,0,0,1,10.33-4.81,8,8,0,0,1,4.61,10.57,1.17,1.17,0,0,0,0,.11L142,92.29a28.05,28.05,0,0,0,15.68,36.33L180,137.45V152c0,1,0,2.07.05,3.1l-122.44-49A101.91,101.91,0,0,1,68.19,92.73ZM116.74,212a83.73,83.73,0,0,1-22.09-39,12,12,0,0,0-23.25,6,110.27,110.27,0,0,0,14.49,33H66.25A91.53,91.53,0,0,1,44,152a84,84,0,0,1,3.41-24.11l136.67,54.66A86.58,86.58,0,0,0,198.66,212Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              Prevents 40 µg/m³ resuspension spike
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Switch from dry sweeping to damp microfiber surface wipe downs
+          </h3>
+          <div
+            class="bg-surface-2 border border-border-subtle rounded-xl p-100 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              VERIFIED DIRECT IMPACT
+            </span>
+            <p
+              class="body-4 text-white font-medium"
+            >
+              Using a damp microfiber cloth instead of dry brooms prevents a 25 to 40 µg/m³ particulate resuspension spike that lingers in the breathing zone for up to 3 hours.
+            </p>
+          </div>
+          <div
+            class="mb-200"
+          >
+            <span
+              class="caption-4 text-neutral-300 font-medium block mb-50"
+            >
+              Execution Protocol:
+            </span>
+            <ul
+              class="space-y-50 caption-4 text-neutral-300"
+            >
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Use electrostatically charged microfiber cloths dampened with clean water or non toxic plant surfactant.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Mop hard floors with damp pads rather than traditional dry corn brooms.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Vacuum carpets using a vacuum cleaner equipped with a certified sealed HEPA exhaust filtration system.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-150 border-t border-border-subtle flex flex-col gap-50 caption-5 text-neutral-400"
+        >
+          <div
+            class="flex items-center gap-50"
+          >
+            <svg
+              class="text-neutral-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Source: 
+              US EPA Healthy Indoor Environments Cleaning Standards
+            </span>
+          </div>
+          <p
+            class="text-neutral-500"
+          >
+            Winter Context: 
+            Winter dry indoor air weakens particle adhesion, causing ordinary foot traffic and dry sweeping to launch toxic settled soot back into respiratory height.
+          </p>
+        </div>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-default rounded-2xl p-200 transition-all duration-500 ease-base hover:border-border-strong flex flex-col justify-between h-full"
+      >
+        <div>
+          <div
+            class="flex items-start justify-between gap-100 mb-150"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-surface-2 border border-border-subtle flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="text-cyan-400"
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 256 256"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M134.88,6.17a12,12,0,0,0-13.76,0,259,259,0,0,0-42.18,39C50.85,77.43,36,111.62,36,144a92,92,0,0,0,184,0C220,66.64,138.36,8.6,134.88,6.17ZM128,212a68.07,68.07,0,0,1-68-68c0-33.31,20-63.37,36.7-82.71A249.35,249.35,0,0,1,128,31.11a249.35,249.35,0,0,1,31.3,30.18C176,80.63,196,110.69,196,144A68.07,68.07,0,0,1,128,212Zm49.62-52.4a52,52,0,0,1-34,34,12.2,12.2,0,0,1-3.6.55,12,12,0,0,1-3.6-23.45,28,28,0,0,0,18.32-18.32,12,12,0,0,1,22.9,7.2Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-surface-2 border border-border-subtle text-emerald-400 font-mono caption-4 py-25 px-75 rounded-md text-right"
+            >
+              30% to 50% ideal biological zone
+            </div>
+          </div>
+          <h3
+            class="title-2 text-white mb-100 leading-snug"
+          >
+            Maintain indoor relative humidity between 30% and 50%
+          </h3>
+          <div
+            class="bg-surface-2 border border-border-subtle rounded-xl p-100 mb-150"
+          >
+            <span
+              class="caption-5 font-mono text-neutral-400 block mb-25"
+            >
+              VERIFIED DIRECT IMPACT
+            </span>
+            <p
+              class="body-4 text-white font-medium"
+            >
+              Keeping winter relative humidity between 30% and 50% minimizes respiratory mucous dehydration while preventing condensation that triggers toxic mold spore colonies.
+            </p>
+          </div>
+          <div
+            class="mb-200"
+          >
+            <span
+              class="caption-4 text-neutral-300 font-medium block mb-50"
+            >
+              Execution Protocol:
+            </span>
+            <ul
+              class="space-y-50 caption-4 text-neutral-300"
+            >
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Monitor indoor levels with a calibrated digital hygrometer.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Use an evaporative or ultrasonic humidifier filled with distilled water if heated winter air drops below 30%.
+                </span>
+              </li>
+              <li
+                class="flex items-start gap-50"
+              >
+                <svg
+                  class="text-neutral-400 shrink-0 mt-25"
+                  fill="currentColor"
+                  height="14"
+                  viewBox="0 0 256 256"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+                  />
+                </svg>
+                <span>
+                  Clean humidifier reservoirs every three days to prevent bacterial aerosolization.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-150 border-t border-border-subtle flex flex-col gap-50 caption-5 text-neutral-400"
+        >
+          <div
+            class="flex items-center gap-50"
+          >
+            <svg
+              class="text-neutral-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Source: 
+              US EPA & ASHRAE Standard 62.2 Moisture Management Guidelines
+            </span>
+          </div>
+          <p
+            class="text-neutral-500"
+          >
+            Winter Context: 
+            Cold outdoor air brought indoors and heated drops below 20% relative humidity, compromising human nasal mucosal defenses and prolonging droplet airborne suspension.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`UI Rendering & Component Snapshot Tests > renders LocationInput and matches snapshot 1`] = `
+<div>
+  <div
+    class="bg-surface-1 border border-border-default rounded-2xl p-200"
+  >
+    <header
+      class="flex items-center justify-between pb-100 mb-200 border-b border-border-subtle"
+    >
+      <div
+        class="flex items-center gap-75"
+      >
+        <svg
+          aria-hidden="true"
+          class="text-white"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 256 256"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z"
+          />
+        </svg>
+        <h3
+          class="title-3 text-white"
+        >
+          Location & Smog Corridor
+        </h3>
+      </div>
+      <span
+        aria-live="polite"
+        class="caption-4 text-emerald-400 font-mono"
+        role="status"
+      >
+        METRO PRESET
+      </span>
+    </header>
+    <fieldset
+      class="mb-200 border-0 p-0 m-0"
+    >
+      <legend
+        class="caption-3 text-neutral-300 block mb-75 font-medium"
+      >
+        Select Winter Smog Hotspot
+      </legend>
+      <div
+        aria-label="Smog Hotspots"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-75"
+        role="radiogroup"
+      >
+        <button
+          aria-checked="true"
+          class="text-left p-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-3 border-white text-white font-medium shadow-sm"
+          role="radio"
+          type="button"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <span
+              class="text-white caption-1 font-medium"
+            >
+              Delhi
+            </span>
+            <svg
+              aria-hidden="true"
+              class="text-emerald-400 shrink-0"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"
+              />
+            </svg>
+          </div>
+          <span
+            class="caption-5 text-neutral-400 block mt-25"
+          >
+            India
+          </span>
+        </button>
+        <button
+          aria-checked="false"
+          class="text-left p-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 border-border-subtle text-neutral-400 hover:text-white hover:bg-surface-3"
+          role="radio"
+          type="button"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <span
+              class="text-white caption-1 font-medium"
+            >
+              Beijing
+            </span>
+          </div>
+          <span
+            class="caption-5 text-neutral-400 block mt-25"
+          >
+            China
+          </span>
+        </button>
+        <button
+          aria-checked="false"
+          class="text-left p-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 border-border-subtle text-neutral-400 hover:text-white hover:bg-surface-3"
+          role="radio"
+          type="button"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <span
+              class="text-white caption-1 font-medium"
+            >
+              Lahore
+            </span>
+          </div>
+          <span
+            class="caption-5 text-neutral-400 block mt-25"
+          >
+            Pakistan
+          </span>
+        </button>
+        <button
+          aria-checked="false"
+          class="text-left p-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 border-border-subtle text-neutral-400 hover:text-white hover:bg-surface-3"
+          role="radio"
+          type="button"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <span
+              class="text-white caption-1 font-medium"
+            >
+              Salt Lake City
+            </span>
+          </div>
+          <span
+            class="caption-5 text-neutral-400 block mt-25"
+          >
+            United States
+          </span>
+        </button>
+        <button
+          aria-checked="false"
+          class="text-left p-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 border-border-subtle text-neutral-400 hover:text-white hover:bg-surface-3"
+          role="radio"
+          type="button"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <span
+              class="text-white caption-1 font-medium"
+            >
+              London
+            </span>
+          </div>
+          <span
+            class="caption-5 text-neutral-400 block mt-25"
+          >
+            United Kingdom
+          </span>
+        </button>
+        <button
+          aria-checked="false"
+          class="text-left p-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 border-border-subtle text-neutral-400 hover:text-white hover:bg-surface-3"
+          role="radio"
+          type="button"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <span
+              class="text-white caption-1 font-medium"
+            >
+              Katowice
+            </span>
+          </div>
+          <span
+            class="caption-5 text-neutral-400 block mt-25"
+          >
+            Poland
+          </span>
+        </button>
+      </div>
+    </fieldset>
+    <div
+      class="pt-100 border-t border-border-subtle"
+    >
+      <button
+        aria-controls="custom-coordinates-panel"
+        aria-expanded="false"
+        class="w-full flex items-center justify-between p-75 rounded-lg bg-surface-2 hover:bg-surface-3 border border-border-subtle text-neutral-300 hover:text-white caption-3 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        type="button"
+      >
+        <span
+          class="flex items-center gap-50"
+        >
+          <svg
+            aria-hidden="true"
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 256 256"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212ZM163.27,77l-56,24a12,12,0,0,0-6.3,6.3l-24,56A12,12,0,0,0,92.73,179l56-24a12,12,0,0,0,6.3-6.3l24-56A12,12,0,0,0,163.27,77Zm-28.41,57.89-24,10.29,10.29-24,24-10.29Z"
+            />
+          </svg>
+          <span>
+            Use Custom Geographic Coordinates
+          </span>
+        </span>
+        <span
+          class="caption-5 font-mono text-neutral-400"
+        >
+          EXPAND
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UI Rendering & Component Snapshot Tests > renders ProfileBuilder with accessible slider and matches snapshot 1`] = `
+<div>
+  <form
+    aria-label="Household Air Quality Profile Configuration"
+    class="bg-surface-1 border border-border-default rounded-2xl p-200"
+  >
+    <header
+      class="flex items-center gap-75 pb-100 mb-200 border-b border-border-subtle"
+    >
+      <svg
+        aria-hidden="true"
+        class="text-white"
+        fill="currentColor"
+        height="20"
+        viewBox="0 0 256 256"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M222.14,105.85l-80-80a20,20,0,0,0-28.28,0l-80,80A19.86,19.86,0,0,0,28,120v96a12,12,0,0,0,12,12h64a12,12,0,0,0,12-12V164h24v52a12,12,0,0,0,12,12h64a12,12,0,0,0,12-12V120A19.86,19.86,0,0,0,222.14,105.85ZM204,204H164V152a12,12,0,0,0-12-12H104a12,12,0,0,0-12,12v52H52V121.65l76-76,76,76Z"
+        />
+      </svg>
+      <h3
+        class="title-3 text-white"
+      >
+        Household Vulnerabilities & Dwelling
+      </h3>
+    </header>
+    <fieldset
+      class="mb-200 border-0 p-0 m-0"
+    >
+      <legend
+        class="caption-3 text-neutral-300 block mb-75 font-medium"
+      >
+        Select Vulnerable Cohorts at Home (Multi-select)
+      </legend>
+      <div
+        aria-label="Demographic Cohorts"
+        class="flex flex-wrap gap-50"
+        role="group"
+      >
+        <button
+          aria-pressed="true"
+          class="py-50 px-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-white text-black border-white font-medium shadow-sm"
+          type="button"
+        >
+          Infants & Toddlers
+        </button>
+        <button
+          aria-pressed="true"
+          class="py-50 px-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-white text-black border-white font-medium shadow-sm"
+          type="button"
+        >
+          Elderly Seniors
+        </button>
+        <button
+          aria-pressed="false"
+          class="py-50 px-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-3"
+          type="button"
+        >
+          Pregnant Women
+        </button>
+        <button
+          aria-pressed="false"
+          class="py-50 px-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-3"
+          type="button"
+        >
+          Asthma or COPD
+        </button>
+        <button
+          aria-pressed="false"
+          class="py-50 px-75 rounded-lg border caption-2 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-surface-2 text-neutral-400 border-border-subtle hover:text-white hover:bg-surface-3"
+          type="button"
+        >
+          Healthy Adults
+        </button>
+      </div>
+    </fieldset>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 gap-100 mb-200"
+    >
+      <div>
+        <label
+          class="caption-4 text-neutral-300 block mb-25 font-medium"
+          for="select-dwelling-type"
+        >
+          Dwelling Structure
+        </label>
+        <select
+          class="w-full bg-surface-2 border border-border-subtle text-neutral-200 rounded-lg p-50 caption-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          id="select-dwelling-type"
+        >
+          <option
+            value="apartment_highrise"
+          >
+            Apartment Highrise (Air Sealing Standard)
+          </option>
+          <option
+            value="apartment_lowrise"
+          >
+            Apartment Lowrise (Moderate Infiltration)
+          </option>
+          <option
+            value="detached_house"
+          >
+            Detached House (Higher Thermal Losses)
+          </option>
+          <option
+            value="traditional_masonry"
+          >
+            Traditional Masonry (High Draft Envelope)
+          </option>
+        </select>
+      </div>
+      <div>
+        <label
+          class="caption-4 text-neutral-300 block mb-25 font-medium"
+          for="select-space-heating"
+        >
+          Primary Heating Source
+        </label>
+        <select
+          class="w-full bg-surface-2 border border-border-subtle text-neutral-200 rounded-lg p-50 caption-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          id="select-space-heating"
+        >
+          <option
+            value="natural_gas"
+          >
+            Natural Gas Boiler / Furnace
+          </option>
+          <option
+            value="wood_biomass"
+          >
+            Wood or Biomass Stove
+          </option>
+          <option
+            value="electric_resistance"
+          >
+            Electric Resistance Baseboard
+          </option>
+          <option
+            value="heat_pump"
+          >
+            Electric Heat Pump (COP &gt; 3.0)
+          </option>
+          <option
+            value="district_steam"
+          >
+            Municipal District Heating
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 gap-100 mb-200"
+    >
+      <div>
+        <label
+          class="caption-4 text-neutral-300 block mb-25 font-medium"
+          for="select-commute-mode"
+        >
+          Daily Commute Method
+        </label>
+        <select
+          class="w-full bg-surface-2 border border-border-subtle text-neutral-200 rounded-lg p-50 caption-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          id="select-commute-mode"
+        >
+          <option
+            value="solo_car_gas"
+          >
+            Solo Gasoline Automobile
+          </option>
+          <option
+            value="carpool"
+          >
+            Shared Carpool (3+ Commuters)
+          </option>
+          <option
+            value="public_transit"
+          >
+            Subway, Train, or Bus
+          </option>
+          <option
+            value="active_walking_cycling"
+          >
+            Active Walking or Cycling
+          </option>
+        </select>
+      </div>
+      <div>
+        <div
+          class="flex justify-between items-center mb-25"
+        >
+          <label
+            class="caption-4 text-neutral-300 font-medium"
+            for="input-room-area"
+          >
+            Main Living Room Area
+          </label>
+          <span
+            aria-live="polite"
+            class="font-mono text-sm text-white font-medium"
+          >
+            28
+             m²
+          </span>
+        </div>
+        <input
+          aria-valuemax="90"
+          aria-valuemin="10"
+          aria-valuenow="28"
+          aria-valuetext="28 square meters"
+          class="w-full accent-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          id="input-room-area"
+          max="90"
+          min="10"
+          role="slider"
+          step="2"
+          type="range"
+          value="28"
+        />
+      </div>
+    </div>
+    <div
+      class="flex items-center gap-75 mb-300 p-75 bg-surface-2 rounded-lg border border-border-subtle"
+    >
+      <input
+        checked=""
+        class="w-4 h-4 rounded bg-surface-3 border-border-default text-white accent-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        id="checkbox-air-purifier"
+        type="checkbox"
+      />
+      <label
+        class="caption-2 text-neutral-300 cursor-pointer select-none"
+        for="checkbox-air-purifier"
+      >
+        Dwelling currently operates an air purifier or HEPA cleaner
+      </label>
+    </div>
+    <button
+      aria-disabled="false"
+      class="w-full flex items-center justify-center gap-75 bg-white hover:bg-neutral-200 text-black py-75 px-100 rounded-lg button-md transition-all duration-300 ease-base active:scale-95 disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+      type="submit"
+    >
+      <span
+        class="flex items-center gap-50"
+      >
+        <svg
+          aria-hidden="true"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 256 256"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M199,125.31l-49.88-18.39L130.69,57a19.92,19.92,0,0,0-37.38,0L74.92,106.92,25,125.31a19.92,19.92,0,0,0,0,37.38l49.88,18.39L93.31,231a19.92,19.92,0,0,0,37.38,0l18.39-49.88L199,162.69a19.92,19.92,0,0,0,0-37.38Zm-63.38,35.16a12,12,0,0,0-7.11,7.11L112,212.28l-16.47-44.7a12,12,0,0,0-7.11-7.11L43.72,144l44.7-16.47a12,12,0,0,0,7.11-7.11L112,75.72l16.47,44.7a12,12,0,0,0,7.11,7.11L180.28,144ZM140,40a12,12,0,0,1,12-12h12V16a12,12,0,0,1,24,0V28h12a12,12,0,0,1,0,24H188V64a12,12,0,0,1-24,0V52H152A12,12,0,0,1,140,40ZM252,88a12,12,0,0,1-12,12h-4v4a12,12,0,0,1-24,0v-4h-4a12,12,0,0,1,0-24h4V72a12,12,0,0,1,24,0v4h4A12,12,0,0,1,252,88Z"
+          />
+        </svg>
+        <span>
+          Generate AI Advisory Routine
+        </span>
+      </span>
+    </button>
+  </form>
+</div>
+`;
+
+exports[`UI Rendering & Component Snapshot Tests > renders SuggestionsDisplay with metrics and matches snapshot 1`] = `
+<div>
+  <section
+    aria-label="Personalized Clean Air Suggestions & Impact"
+    class="flex flex-col gap-300"
+  >
+    <article
+      class="bg-surface-1 border border-border-default rounded-2xl p-200"
+    >
+      <header
+        class="flex items-center justify-between pb-100 mb-150 border-b border-border-subtle"
+      >
+        <div
+          class="flex items-center gap-75"
+        >
+          <svg
+            aria-hidden="true"
+            class="text-white"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 256 256"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M208,36H48A20,20,0,0,0,28,56v56c0,54.29,26.32,87.22,48.4,105.29,23.71,19.39,47.44,26,48.44,26.29a12.1,12.1,0,0,0,6.32,0c1-.28,24.73-6.9,48.44-26.29,22.08-18.07,48.4-51,48.4-105.29V56A20,20,0,0,0,208,36Zm-4,76c0,35.71-13.09,64.69-38.91,86.15A126.28,126.28,0,0,1,128,219.38a126.14,126.14,0,0,1-37.09-21.23C65.09,176.69,52,147.71,52,112V60H204ZM79.51,144.49a12,12,0,1,1,17-17L112,143l47.51-47.52a12,12,0,0,1,17,17l-56,56a12,12,0,0,1-17,0Z"
+            />
+          </svg>
+          <h3
+            class="title-3 text-white"
+          >
+            Gemini 3 Atmospheric Synthesis
+          </h3>
+        </div>
+        <span
+          class="caption-5 text-neutral-400 font-mono"
+        >
+          ENGINE: 
+          Google Cloud Vertex AI (Gemini 3)
+        </span>
+      </header>
+      <p
+        class="body-3 text-neutral-200 mb-200"
+      >
+        Atmospheric telemetry in Delhi indicates 275 US AQI with severe inversion.
+      </p>
+      <dl
+        aria-label="Cumulative Health and Carbon Savings"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-100 pt-150 border-t border-border-subtle"
+      >
+        <div
+          class="bg-surface-2 p-100 rounded-xl border border-border-subtle"
+        >
+          <dt
+            class="caption-5 text-neutral-400 block mb-25 uppercase"
+          >
+            PM2.5 INHALED DOSE AVOIDED
+          </dt>
+          <dd
+            class="text-2xl font-mono font-semibold text-emerald-400 m-0"
+          >
+            495
+             µg
+          </dd>
+          <dd
+            class="caption-5 text-neutral-400 block mt-25 m-0"
+          >
+            avoided by protected family members
+          </dd>
+        </div>
+        <div
+          class="bg-surface-2 p-100 rounded-xl border border-border-subtle"
+        >
+          <dt
+            class="caption-5 text-neutral-400 block mb-25 uppercase"
+          >
+            CARBON FOOTPRINT DISPLACED
+          </dt>
+          <dd
+            class="text-2xl font-mono font-semibold text-white m-0"
+          >
+            5.3
+             kg CO2e
+          </dd>
+          <dd
+            class="caption-5 text-neutral-400 block mt-25 m-0"
+          >
+            daily transit and heating abatement
+          </dd>
+        </div>
+      </dl>
+    </article>
+    <div
+      aria-label="Suggestion Categories"
+      class="flex flex-wrap items-center gap-50 bg-surface-1 p-50 rounded-xl border border-border-subtle"
+      role="tablist"
+    >
+      <button
+        aria-controls="panel-all"
+        aria-selected="true"
+        class="py-50 px-75 rounded-lg caption-3 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-white text-black font-semibold shadow-sm"
+        id="tab-all"
+        role="tab"
+        tabindex="0"
+      >
+        <span>
+          All Actions
+        </span>
+        <span
+          class="caption-5 font-mono ml-50 opacity-75"
+        >
+          (
+          3
+          )
+        </span>
+      </button>
+      <button
+        aria-controls="panel-routines"
+        aria-selected="false"
+        class="py-50 px-75 rounded-lg caption-3 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white text-neutral-400 hover:text-white hover:bg-surface-2"
+        id="tab-routines"
+        role="tab"
+        tabindex="-1"
+      >
+        <span>
+          Timed Routines
+        </span>
+        <span
+          class="caption-5 font-mono ml-50 opacity-75"
+        >
+          (
+          1
+          )
+        </span>
+      </button>
+      <button
+        aria-controls="panel-hacks"
+        aria-selected="false"
+        class="py-50 px-75 rounded-lg caption-3 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white text-neutral-400 hover:text-white hover:bg-surface-2"
+        id="tab-hacks"
+        role="tab"
+        tabindex="-1"
+      >
+        <span>
+          Indoor Hacks
+        </span>
+        <span
+          class="caption-5 font-mono ml-50 opacity-75"
+        >
+          (
+          1
+          )
+        </span>
+      </button>
+      <button
+        aria-controls="panel-alternatives"
+        aria-selected="false"
+        class="py-50 px-75 rounded-lg caption-3 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white text-neutral-400 hover:text-white hover:bg-surface-2"
+        id="tab-alternatives"
+        role="tab"
+        tabindex="-1"
+      >
+        <span>
+          Greener Swaps
+        </span>
+        <span
+          class="caption-5 font-mono ml-50 opacity-75"
+        >
+          (
+          1
+          )
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="tab-all"
+      class="flex flex-col gap-100"
+      id="panel-all"
+      role="tabpanel"
+    >
+      <article
+        class="bg-surface-1 border border-border-subtle rounded-xl p-150 transition-all duration-300 hover:border-border-default focus-within:border-white"
+      >
+        <header
+          class="flex items-start justify-between gap-100 mb-50"
+        >
+          <div>
+            <h4
+              class="title-3 text-white"
+            >
+              Shift morning transit to afternoon inversion trough
+            </h4>
+            <span
+              class="caption-5 text-neutral-400 font-mono block mt-25"
+            >
+              Recommended Window: 
+              1:30 PM to 4:00 PM
+            </span>
+          </div>
+          <span
+            aria-label="Priority: urgent"
+            class="caption-5 font-mono py-25 px-50 rounded shrink-0 border bg-red-950 text-red-300 border-red-800"
+            role="note"
+          >
+            URGENT
+          </span>
+        </header>
+        <p
+          class="body-5 text-neutral-300 mb-150"
+        >
+          Delay outdoor errands until solar warming elevates the boundary layer.
+        </p>
+        <footer
+          class="flex flex-wrap items-center justify-between gap-75 pt-100 border-t border-border-subtle"
+        >
+          <div
+            class="flex items-center gap-150 font-mono text-xs"
+          >
+            <span
+              class="text-emerald-400 font-medium"
+            >
+              +
+              120
+               µg PM2.5 avoided
+            </span>
+          </div>
+          <button
+            aria-haspopup="dialog"
+            class="caption-4 text-neutral-300 hover:text-white flex items-center gap-25 transition-colors duration-200 underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded p-25"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Formula & Assumptions
+            </span>
+          </button>
+        </footer>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-subtle rounded-xl p-150 transition-all duration-300 hover:border-border-default focus-within:border-white"
+      >
+        <header
+          class="flex items-start justify-between gap-100 mb-50"
+        >
+          <div>
+            <h4
+              class="title-3 text-white"
+            >
+              Establish a positive-pressure clean room with weatherstripping
+            </h4>
+          </div>
+          <span
+            aria-label="Priority: high"
+            class="caption-5 font-mono py-25 px-50 rounded shrink-0 border bg-surface-2 text-neutral-300 border-border-subtle"
+            role="note"
+          >
+            HIGH
+          </span>
+        </header>
+        <p
+          class="body-5 text-neutral-300 mb-150"
+        >
+          Weatherstrip door sweeps and run air cleaner continuously.
+        </p>
+        <footer
+          class="flex flex-wrap items-center justify-between gap-75 pt-100 border-t border-border-subtle"
+        >
+          <div
+            class="flex items-center gap-150 font-mono text-xs"
+          >
+            <span
+              class="text-emerald-400 font-medium"
+            >
+              +
+              310
+               µg PM2.5 avoided
+            </span>
+            <span
+              class="text-white font-medium"
+            >
+              +
+              0.45
+               kg CO2e saved
+            </span>
+          </div>
+          <button
+            aria-haspopup="dialog"
+            class="caption-4 text-neutral-300 hover:text-white flex items-center gap-25 transition-colors duration-200 underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded p-25"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Formula & Assumptions
+            </span>
+          </button>
+        </footer>
+      </article>
+      <article
+        class="bg-surface-1 border border-border-subtle rounded-xl p-150 transition-all duration-300 hover:border-border-default focus-within:border-white"
+      >
+        <header
+          class="flex items-start justify-between gap-100 mb-50"
+        >
+          <div>
+            <h4
+              class="title-3 text-white"
+            >
+              Shift commute to metro transit
+            </h4>
+          </div>
+          <span
+            aria-label="Priority: high"
+            class="caption-5 font-mono py-25 px-50 rounded shrink-0 border bg-surface-2 text-neutral-300 border-border-subtle"
+            role="note"
+          >
+            HIGH
+          </span>
+        </header>
+        <p
+          class="body-5 text-neutral-300 mb-150"
+        >
+          Transitioning to metro rail cuts neighborhood emissions.
+        </p>
+        <footer
+          class="flex flex-wrap items-center justify-between gap-75 pt-100 border-t border-border-subtle"
+        >
+          <div
+            class="flex items-center gap-150 font-mono text-xs"
+          >
+            <span
+              class="text-emerald-400 font-medium"
+            >
+              +
+              65
+               µg PM2.5 avoided
+            </span>
+            <span
+              class="text-white font-medium"
+            >
+              +
+              4.85
+               kg CO2e saved
+            </span>
+          </div>
+          <button
+            aria-haspopup="dialog"
+            class="caption-4 text-neutral-300 hover:text-white flex items-center gap-25 transition-colors duration-200 underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded p-25"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="currentColor"
+              height="14"
+              viewBox="0 0 256 256"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+              />
+            </svg>
+            <span>
+              Formula & Assumptions
+            </span>
+          </button>
+        </footer>
+      </article>
+    </div>
+  </section>
+</div>
+`;
