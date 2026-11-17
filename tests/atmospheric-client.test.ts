@@ -98,4 +98,21 @@ describe('Atmospheric Data Retrieval Client (Open-Meteo / CAMS)', () => {
     expect(fallbackData.pm25).toBeGreaterThan(0);
     expect(fallbackData.no2).toBeGreaterThan(0);
   });
+
+  it('serves cached telemetry on repeated calls to optimize latency and efficiency', async () => {
+    // Prime the cache
+    const firstCall = await fetchConsolidatedAtmosphericTelemetry(DELHI_LAT, DELHI_LON, 'Delhi', {
+      timeoutMs: 8000,
+    });
+    expect(firstCall).toBeDefined();
+
+    // Second call should return cached instance immediately
+    const start = performance.now();
+    const secondCall = await fetchConsolidatedAtmosphericTelemetry(DELHI_LAT, DELHI_LON, 'Delhi');
+    const elapsed = performance.now() - start;
+
+    expect(secondCall).toBeDefined();
+    expect(secondCall.pm25).toBe(firstCall.pm25);
+    expect(elapsed).toBeLessThan(50); // In-memory cache returns in under 50ms
+  });
 });

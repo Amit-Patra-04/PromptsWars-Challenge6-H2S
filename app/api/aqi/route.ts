@@ -32,7 +32,11 @@ export async function GET(request: NextRequest) {
       validation.data.city
     );
 
-    return NextResponse.json(atmosphericData);
+    return NextResponse.json(atmosphericData, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=180, stale-while-revalidate=60',
+      },
+    });
   } catch (error) {
     console.error('AQI API Route Error:', error);
     return NextResponse.json(

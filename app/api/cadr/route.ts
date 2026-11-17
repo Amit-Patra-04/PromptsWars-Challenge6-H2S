@@ -30,7 +30,11 @@ export async function GET(request: NextRequest) {
       validation.data.targetAirChangesPerHour
     );
 
-    return NextResponse.json(result);
+    return NextResponse.json(result, {
+      headers: {
+        'Cache-Control': 'public, max-age=3600, s-maxage=86400',
+      },
+    });
   } catch (error) {
     return NextResponse.json(
       { error: 'Failed to compute clean air delivery rate' },

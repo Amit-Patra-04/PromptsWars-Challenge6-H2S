@@ -108,6 +108,19 @@ export interface AtmosphericClientOptions {
   retries?: number;             // Retry attempts for transient failures (default: 2)
   retryDelayMs?: number;        // Base retry backoff in ms (default: 400)
   useFallbackOnFailure?: boolean; // Whether to return calibrated fallback on total failure (default: true)
+  skipCache?: boolean;          // Bypass in-memory TTL cache (default: false)
+}
+
+interface CacheEntry {
+  data: AtmosphericData;
+  expiresAt: number;
+}
+
+const atmosphericTelemetryCache = new Map<string, CacheEntry>();
+const CACHE_TTL_MS = 3 * 60 * 1000; // 3-minute in-memory cache
+
+export function clearAtmosphericCache(): void {
+  atmosphericTelemetryCache.clear();
 }
 
 export interface AirQualityMetrics {
@@ -136,6 +149,7 @@ const DEFAULT_OPTIONS: Required<AtmosphericClientOptions> = {
   retries: 2,
   retryDelayMs: 400,
   useFallbackOnFailure: true,
+  skipCache: false,
 };
 
 /**
@@ -368,6 +382,17 @@ export async function fetchConsolidatedAtmosphericTelemetry(
   cityName: string = 'Urban Location',
   options: AtmosphericClientOptions = {}
 ): Promise<AtmosphericData> {
+  const cacheKey = `${latitude.toFixed(2)}_${longitude.toFixed(2)}`;
+  if (!options.skipCache) {
+    const cached = atmosphericTelemetryCache.get(cacheKey);
+    if (cached && Date.now() < cached.expiresAt) {
+      return {
+        ...cached.data,
+        city: cityName,
+      };
+    }
+  }
+
   // Execute air quality and weather requests concurrently
   const [aqResult, weatherResult] = await Promise.allSettled([
     fetchAirQualityMetrics(latitude, longitude, options),
@@ -407,7 +432,7 @@ export async function fetchConsolidatedAtmosphericTelemetry(
     inversionSeverity = weatherData.boundaryLayerHeightM < 220 || aqData.pm25 > 150 ? 'critical' : 'moderate';
   }
 
-  return {
+  const result: AtmosphericData = {
     city: cityName,
     latitude,
     longitude,
@@ -444,4 +469,13 @@ export async function fetchConsolidatedAtmosphericTelemetry(
       },
     ],
   };
+
+  if (!options.skipCache) {
+    atmosphericTelemetryCache.set(cacheKey, {
+      data: result,
+      expiresAt: Date.now() + CACHE_TTL_MS,
+    });
+  }
+
+  return result;
 }

@@ -8,7 +8,8 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-Vertex_AI_%26_Translate-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Gemini 3](https://img.shields.io/badge/AI_Engine-Gemini_3_Orchestrator-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white)
-![Vitest](https://img.shields.io/badge/Tests-52%2F52_Passing_(100%25)-brightgreen?style=for-the-badge&logo=vitest&logoColor=white)
+![Vitest](https://img.shields.io/badge/Tests-59%2F59_Passing_(100%25)-brightgreen?style=for-the-badge&logo=vitest&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-0_Warnings-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 ![Accessibility](https://img.shields.io/badge/WCAG_2.1-AAA_Compliant_(axe--core)-success?style=for-the-badge&logo=w3c&logoColor=white)
 ![Security](https://img.shields.io/badge/Security-Strict_CSP_%26_Zero_Secrets-blueviolet?style=for-the-badge&logo=shield&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
@@ -467,29 +468,30 @@ $ npm test
  RUN  v2.1.9 C:/Main/H2S 6
 
  ✓ tests/security-csp.test.ts (3 tests)
- ✓ tests/sanitizer.test.ts (5 tests)
+ ✓ tests/impact-calculator.test.ts (3 tests)
  ✓ tests/indoor-advice.test.ts (4 tests)
  ✓ tests/greener-swaps.test.ts (4 tests)
- ✓ tests/indoor-guidelines.test.ts (4 tests)
- ✓ tests/impact-calculator.test.ts (3 tests)
  ✓ tests/suggestion-generation.test.ts (4 tests)
- ✓ tests/data-fetching-mock.test.ts (5 tests)
+ ✓ tests/sanitizer.test.ts (5 tests)
  ✓ tests/accessibility.test.ts (7 tests)
+ ✓ tests/data-fetching-mock.test.ts (5 tests)
+ ✓ tests/api-routes.test.ts (6 tests)
+ ✓ tests/atmospheric-client.test.ts (6 tests)
+ ✓ tests/indoor-guidelines.test.ts (4 tests)
  ✓ tests/i18n.test.ts (3 tests)
  ✓ tests/ui-rendering-snapshots.test.tsx (5 tests)
- ✓ tests/atmospheric-client.test.ts (5 tests)
 
  Snapshots:   5 written
- Test Files:  12 passed (12)
- Tests:       52 passed (52)
- Duration:    9.11s
+ Test Files:  13 passed (13)
+ Tests:       59 passed (59)
+ Duration:    7.46s
 ```
 
 ### Detailed Test Inventory
 
 | Test Suite | File Link | Test Count | Scope & Assertions Covered | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Security & CSP** | [security-csp.test.ts](file:///c:/Main/H2S%206/tests/security-csp.test.ts) | 3 | Strict CSP headers, frame-ancestors 'none', automated secret scanning across codebase. | Passed |
+| **Security & CSP** | [security-csp.test.ts](file:///c:/Main/H2S%206/tests/security-csp.test.ts) | 3 | Strict CSP headers, frame-ancestors 'none', COOP policy, automated secret scanning. | Passed |
 | **Sanitization & Injection** | [sanitizer.test.ts](file:///c:/Main/H2S%206/tests/sanitizer.test.ts) | 5 | XSS neutralization, script tag stripping, coordinate clamping, Zod schema validation. | Passed |
 | **Indoor Science & EPA** | [indoor-advice.test.ts](file:///c:/Main/H2S%206/tests/indoor-advice.test.ts) | 4 | EPA 2-5x ratio citations, reduction percentages, risk category filtering. | Passed |
 | **Greener Swaps & Factors** | [greener-swaps.test.ts](file:///c:/Main/H2S%206/tests/greener-swaps.test.ts) | 4 | EPA 404 g/mile vehicle factor, AP-42 combustion factors, arrow-annotated UI syntax. | Passed |
@@ -500,7 +502,8 @@ $ npm test
 | **Automated Accessibility** | [accessibility.test.ts](file:///c:/Main/H2S%206/tests/accessibility.test.ts) | 7 | axe-core automated audit (0 violations), W3C ARIA tablist roles, modal focus trapping, contrast checks. | Passed |
 | **Internationalization** | [i18n.test.ts](file:///c:/Main/H2S%206/tests/i18n.test.ts) | 3 | Translation dictionary integrity across EN, HI, ZH, ES, FR, PA. | Passed |
 | **UI Snapshot Tests** | [ui-rendering-snapshots.test.tsx](file:///c:/Main/H2S%206/tests/ui-rendering-snapshots.test.tsx) | 5 | DOM snapshots for LocationInput, ProfileBuilder, SuggestionsDisplay, IndoorAirAdvice, GreenerAlternatives. | Passed |
-| **Atmospheric Client** | [atmospheric-client.test.ts](file:///c:/Main/H2S%206/tests/atmospheric-client.test.ts) | 5 | Live & mock PM2.5/NO2 ingestion, weather & boundary layer height parsing, AbortController timeouts. | Passed |
+| **Atmospheric Client** | [atmospheric-client.test.ts](file:///c:/Main/H2S%206/tests/atmospheric-client.test.ts) | 6 | Live & mock PM2.5/NO2 ingestion, weather & PBL height, AbortController timeouts, in-memory cache. | Passed |
+| **API Route Handlers** | [api-routes.test.ts](file:///c:/Main/H2S%206/tests/api-routes.test.ts) | 6 | End-to-end integration tests for GET /api/aqi, GET /api/cadr, POST /api/advisor, cache headers. | Passed |
 
 ---
 
@@ -515,8 +518,8 @@ $ npm test
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/aeropulse/aeropulse-urban-air-advisor.git
-   cd aeropulse-urban-air-advisor
+   git clone https://github.com/Amit-Patra-04/PromptsWars-Challenge6-H2S.git
+   cd PromptsWars-Challenge6-H2S
    ```
 
 2. **Install dependencies**:
@@ -534,18 +537,18 @@ $ npm test
    GOOGLE_TRANSLATE_API_KEY="your-google-translate-api-key"
    ```
 
-4. **Launch Development Server**:
+4. **Code Quality & Static Analysis**:
    ```bash
-   npm run dev
+   npm run lint        # Zero ESLint warnings or errors
+   npm run typecheck   # Zero TypeScript compiler errors
    ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 5. **Run the Automated Test Suite**:
    ```bash
    npm test
    ```
 
-6. **Create a Production Build**:
+6. **Create a Production Build & Start Server**:
    ```bash
    npm run build
    npm run start
@@ -560,6 +563,7 @@ c:\Main\H2S 6\
 ├── AGENTS.md                          # Antigravity agentic task tracker and phase checklist
 ├── BLOG.md                            # Narrative development blog & transparency report
 ├── README.md                          # Master documentation, architecture, and rubric mapping
+├── .eslintrc.json                     # Strict ESLint configuration extending next/core-web-vitals
 ├── next.config.mjs                    # Next.js configuration with strict Content Security Policy
 ├── tailwind.config.ts                 # Tailwind configuration with strict spacing and color tokens
 ├── tsconfig.json                      # TypeScript strict compiler configuration
@@ -611,10 +615,10 @@ c:\Main\H2S 6\
 ├── examples/
 │   └── fetch-air-quality-example.ts   # Standalone executable example for data retrieval
 │
-└── tests/                             # Comprehensive Automated Test Matrix (52 tests)
+└── tests/                             # Comprehensive Automated Test Matrix (59 tests)
     ├── setup.ts                       # Vitest DOM test environment setup & mock observers
     ├── accessibility.test.ts          # axe-core automated accessibility audit (0 violations)
-    ├── atmospheric-client.test.ts     # Ingestion of PM2.5, NO2, weather, PBL height, timeouts
+    ├── atmospheric-client.test.ts     # Ingestion of PM2.5, NO2, weather, PBL height, timeouts, cache
     ├── data-fetching-mock.test.ts     # Mocked Open-Meteo & OpenAQ network resilience tests
     ├── greener-swaps.test.ts          # EPA factor calculations & arrow-annotated strings
     ├── i18n.test.ts                   # Internationalization dictionary completeness
@@ -624,7 +628,8 @@ c:\Main\H2S 6\
     ├── sanitizer.test.ts              # Zod validation, coordinate bounds, XSS neutralization
     ├── security-csp.test.ts           # Content Security Policy & automated secret scanning
     ├── suggestion-generation.test.ts  # Gemini output format & required category checks
-    └── ui-rendering-snapshots.test.tsx# React Testing Library DOM snapshot test suite
+    ├── ui-rendering-snapshots.test.tsx# React Testing Library DOM snapshot test suite
+    └── api-routes.test.ts             # API route handlers integration tests with caching verification
 ```
 
 ---

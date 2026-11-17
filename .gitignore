@@ -40,3 +40,4 @@ Thumbs.db
 
 # Antigravity artifacts & cache
 .gemini
+*.tsbuildinfo
