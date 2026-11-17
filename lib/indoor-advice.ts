@@ -173,15 +173,26 @@ export interface DynamicIndoorAdviceRequest {
 }
 
 /**
- * Prioritizes indoor advice items based on user household constraints
+ * Result contract for tailored indoor air advice prioritization
+ */
+export interface TailoredIndoorAdviceResult {
+  /** Top priority interventions based on household vulnerability */
+  highPriorityHacks: IndoorHack[];
+  /** Secondary foundational winter indoor hacks */
+  standardHacks: IndoorHack[];
+  /** Authoritative EPA finding quote */
+  epaNotice: string;
+}
+
+/**
+ * Prioritizes indoor advice items based on user household constraints and risk factors
+ *
+ * @param request Optional household vulnerability and heating/cooking profile parameters
+ * @returns TailoredIndoorAdviceResult containing prioritized and standard winter hacks
  */
 export function getTailoredIndoorAdvice(
   request: DynamicIndoorAdviceRequest = {}
-): {
-  highPriorityHacks: IndoorHack[];
-  standardHacks: IndoorHack[];
-  epaNotice: string;
-} {
+): TailoredIndoorAdviceResult {
   const { heatingSource, hasGasCooking, hasChildrenOrElderly } = request;
 
   const isBiomassOrGasHeating = heatingSource === 'wood_biomass' || heatingSource === 'natural_gas';

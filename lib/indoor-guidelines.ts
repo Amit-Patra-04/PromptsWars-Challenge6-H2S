@@ -28,12 +28,23 @@ export const EPA_AQI_BREAKPOINTS = [
 ] as const;
 
 /**
- * Calculates required Clean Air Delivery Rate (CADR) in CFM and m3/h
+ * Conservative benchmark CADR (CFM) for a standard 20-inch box fan with 4x MERV 13 filters
+ * based on UC Davis / Dr. Richard Corsi & Jim Rosenthal compendium evaluations.
+ */
+export const CORSI_ROSENTHAL_BOX_BENCHMARK_CFM = 320;
+
+/**
+ * Calculates required Clean Air Delivery Rate (CADR) in CFM and m³/h
  * based on room volume and desired Air Changes per Hour (ACH).
  *
  * Physics formula:
  * Room Volume V (ft³) = Floor Area (m²) * 10.7639 * Height (m) * 3.28084
  * CADR_cfm = (V * Target_ACH) / 60
+ *
+ * @param roomAreaSqM Floor area of occupied room in square meters (5 to 400 m²)
+ * @param ceilingHeightM Ceiling height in meters (defaults to 2.5m)
+ * @param targetACH Target Air Changes per Hour (defaults to 5 ACH per Harvard Health standards)
+ * @returns CADRCalculationResult containing required delivery rate and adequacy checks
  */
 export function calculateCADR(
   roomAreaSqM: number,
@@ -46,9 +57,9 @@ export function calculateCADR(
   // CADR (CFM) required to achieve target ACH
   const requiredCADRCfm = Math.round((roomVolumeCuFt * targetACH) / 60);
 
-  // A standard 20-inch Corsi-Rosenthal box fan with 4x MERV 13 filters (20x20x2 or 20x20x1)
-  // achieves ~350 - 450 CFM CADR at medium fan speed. We use conservative 320 CFM benchmark.
-  const corsiRosenthalBoxCapabilityCfm = 320;
+  // A standard 20-inch Corsi-Rosenthal box fan with 4x MERV 13 filters
+  // achieves ~320-450 CFM CADR at medium fan speed.
+  const corsiRosenthalBoxCapabilityCfm = CORSI_ROSENTHAL_BOX_BENCHMARK_CFM;
   const crBoxAdequate = corsiRosenthalBoxCapabilityCfm >= requiredCADRCfm;
 
   // Time in minutes to achieve 90% particle concentration decay:

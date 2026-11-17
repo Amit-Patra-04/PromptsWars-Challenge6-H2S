@@ -4,6 +4,15 @@ import { CoordinatesSchema, sanitizeString } from '@/lib/sanitizer';
 
 export const dynamic = 'force-dynamic';
 
+/**
+ * GET /api/aqi
+ *
+ * Retrieves consolidated atmospheric telemetry (PM2.5, NO2, weather, boundary layer height)
+ * with input sanitization, coordinate bounds validation, and HTTP edge caching.
+ *
+ * @param request NextRequest with query parameters `lat`, `lon`, and `city`
+ * @returns NextResponse with AtmosphericData JSON and Cache-Control headers
+ */
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);

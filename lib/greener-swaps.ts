@@ -204,7 +204,24 @@ export const GREENER_SWAPS_CATALOG: GreenerSwap[] = [
 ];
 
 /**
+ * Result structure for dynamic environmental swap calculation
+ */
+export interface DynamicSwapImpactResult {
+  /** Kilograms of CO2 equivalent emissions abated per day */
+  dailyCo2SavedKg: number;
+  /** Annual kilograms of CO2 equivalent emissions abated */
+  annualCo2SavedKg: number;
+  /** Arrow-annotated UI string (Action ➞ Impact annotation) */
+  annotatedText: string;
+}
+
+/**
  * Deterministically computes dynamic emissions reductions based on user activity parameters
+ * using authoritative EPA vehicle factor (404 g/mi) and AP-42 combustion coefficients.
+ *
+ * @param swapId Identifier of selected greener swap from GREENER_SWAPS_CATALOG
+ * @param parameters User commute distance (miles), heating hours, and weekly frequency
+ * @returns DynamicSwapImpactResult containing daily/annual carbon saved and annotated string
  */
 export function calculateDynamicSwapImpact(
   swapId: string,
@@ -213,11 +230,7 @@ export function calculateDynamicSwapImpact(
     distanceMiles?: number;
     daysPerWeek?: number;
   }
-): {
-  dailyCo2SavedKg: number;
-  annualCo2SavedKg: number;
-  annotatedText: string;
-} {
+): DynamicSwapImpactResult {
   const swap = GREENER_SWAPS_CATALOG.find(s => s.id === swapId) || GREENER_SWAPS_CATALOG[0];
   const daysPerWeek = parameters.daysPerWeek ?? 5;
   const weeksPerYear = 50;

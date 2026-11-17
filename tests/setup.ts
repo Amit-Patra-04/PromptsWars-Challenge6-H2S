@@ -16,6 +16,10 @@ Object.defineProperty(window, 'matchMedia', {
   })),
 });
 
-// Mock requestAnimationFrame & cancelAnimationFrame
-window.requestAnimationFrame = vi.fn((cb) => Number(setTimeout(cb, 0))) as any;
-window.cancelAnimationFrame = vi.fn((id) => clearTimeout(id as any)) as any;
+// Mock requestAnimationFrame & cancelAnimationFrame with strict types
+window.requestAnimationFrame = vi.fn(
+  (callback: FrameRequestCallback): number => Number(setTimeout(callback, 0))
+);
+window.cancelAnimationFrame = vi.fn(
+  (handle: number): void => clearTimeout(handle)
+);

@@ -15,14 +15,22 @@ import { UserProfile, AtmosphericData, AdvisorResponse, ActionSuggestion } from 
 import { generateDeterministicActionSuite } from './impact-calculator';
 import { SupportedLanguage } from './i18n';
 
+/**
+ * Options contract for Google Cloud Vertex AI Gemini 3 advisor synthesis
+ */
 export interface GeminiAdvisorOptions {
+  /** User demographic profile and dwelling information */
   profile: UserProfile;
+  /** Real-time atmospheric criteria pollutants and inversion telemetry */
   weather: AtmosphericData;
+  /** Target localization language code */
   language: SupportedLanguage;
 }
 
 /**
  * Builds high-density prompt context for Vertex AI Gemini 3
+ *
+ * @returns High-density system instructions string with negative prompt constraints
  */
 function buildGeminiSystemPrompt(): string {
   return `You are AeroPulse, an expert atmospheric scientist and GenAI urban air-quality advisor operating within Google Antigravity.
@@ -70,6 +78,9 @@ Generate a concise expert summary and tailored guidance.`;
 /**
  * Core Orchestrator: invokes Google Cloud Vertex AI Gemini 3 (or Gemini API)
  * with robust fallback to deterministic physical engine.
+ *
+ * @param options User demographic profile, atmospheric telemetry snapshot, and language
+ * @returns AdvisorResponse containing categorized actions, totals, and executive summary
  */
 export async function generateUrbanAirAdvice(options: GeminiAdvisorOptions): Promise<AdvisorResponse> {
   const { profile, weather, language } = options;

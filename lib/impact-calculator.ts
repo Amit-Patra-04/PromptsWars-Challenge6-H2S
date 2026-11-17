@@ -36,8 +36,27 @@ const EMISSION_FACTORS = {
 } as const;
 
 /**
- * Determines effective minute ventilation (m3/h) for the household
- * by weighting the most vulnerable demographic member.
+ * Result structure of deterministic physical action suite generation
+ */
+export interface DeterministicActionSuiteResult {
+  /** Recommended low-emission daily routines */
+  routines: ActionSuggestion[];
+  /** Authoritative indoor air quality interventions */
+  indoorHacks: ActionSuggestion[];
+  /** Sustainable domestic energy and transit substitutions */
+  greenAlternatives: ActionSuggestion[];
+  /** Cumulative micrograms of PM2.5 lung exposure avoided */
+  totalAvoidedPm25Ug: number;
+  /** Cumulative kilograms of carbon equivalent emissions abated */
+  totalSavedCarbonKg: number;
+}
+
+/**
+ * Determines effective minute ventilation (m³/h) for the household
+ * by weighting the most physiologically vulnerable demographic member.
+ *
+ * @param cohorts Array of household vulnerability classifications
+ * @returns Effective minute ventilation rate in cubic meters per hour (m³/h)
  */
 export function getHouseholdVentilationRate(cohorts: UserProfile['cohorts']): number {
   if (cohorts.includes('pregnant')) return INHALATION_RATES_M3_PER_HOUR.pregnant;
@@ -48,10 +67,17 @@ export function getHouseholdVentilationRate(cohorts: UserProfile['cohorts']): nu
 }
 
 /**
- * Calculates PM2.5 inhaled dose (ug) avoided when shifting from an unmitigated baseline
+ * Calculates PM2.5 inhaled dose (µg) avoided when shifting from an unmitigated baseline
  * to an advised intervention over an active exposure duration.
  *
- * Dose = Inhalation Rate (m3/h) * Concentration Differential (ug/m3) * Duration (hours)
+ * Physics formula:
+ * Dose = Ventilation Rate (m³/h) * Concentration Differential (µg/m³) * Duration (hours)
+ *
+ * @param ventilationRateM3h Demographic inhalation rate from EPA Exposure Factors Handbook
+ * @param baselineConcentrationUgM3 Baseline particulate concentration under unmitigated exposure
+ * @param mitigatedConcentrationUgM3 Particulate concentration under mitigated clean room/filtration
+ * @param hoursOfExposure Active duration of the exposure intervention in hours
+ * @returns Micrograms of PM2.5 lung burden avoided (rounded to 1 decimal place)
  */
 export function computeAvoidedInhaledDose(
   ventilationRateM3h: number,
@@ -66,17 +92,16 @@ export function computeAvoidedInhaledDose(
 
 /**
  * Generates tailored suggestions with exact mathematical impact breakdowns
+ * and transparent, inspectable assumptions for all actions.
+ *
+ * @param profile Validated user demographic and dwelling profile
+ * @param weather Validated real-time atmospheric telemetry snapshot
+ * @returns DeterministicActionSuiteResult containing categorized actions and totals
  */
 export function generateDeterministicActionSuite(
   profile: UserProfile,
   weather: AtmosphericData
-): {
-  routines: ActionSuggestion[];
-  indoorHacks: ActionSuggestion[];
-  greenAlternatives: ActionSuggestion[];
-  totalAvoidedPm25Ug: number;
-  totalSavedCarbonKg: number;
-} {
+): DeterministicActionSuiteResult {
   const ventRate = getHouseholdVentilationRate(profile.cohorts);
   const ambientPm25 = weather.pm25;
   const isHighSmog = ambientPm25 > 75 || weather.isInversion;

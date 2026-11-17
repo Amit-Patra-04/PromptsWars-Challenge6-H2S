@@ -258,6 +258,13 @@ export const TRANSLATIONS: Record<SupportedLanguage, Record<string, string>> = {
   },
 };
 
+/**
+ * Retrieves localized UI string with automatic English fallback
+ *
+ * @param lang Supported language locale code (en, hi, zh, es, fr, pa)
+ * @param key Translation dictionary string key
+ * @returns Localized UI string or fallback text
+ */
 export function getTranslation(lang: SupportedLanguage, key: string): string {
   const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
   return dict[key] || TRANSLATIONS.en[key] || key;

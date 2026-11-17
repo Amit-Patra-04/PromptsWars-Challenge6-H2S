@@ -4,6 +4,15 @@ import { CADRInputSchema } from '@/lib/sanitizer';
 
 export const dynamic = 'force-dynamic';
 
+/**
+ * GET /api/cadr
+ *
+ * Calculates required Clean Air Delivery Rate (CADR in CFM) and Air Changes per Hour (ACH)
+ * based on room floor area, ceiling height, and target air exchange rate.
+ *
+ * @param request NextRequest with query parameters `roomAreaSqM`, `ceilingHeightM`, and `targetACH`
+ * @returns NextResponse with CADRCalculationResult JSON and immutable Cache-Control headers
+ */
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);

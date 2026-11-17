@@ -50,34 +50,42 @@ export default function AirAdvisorStudio({ currentLang }: AirAdvisorStudioProps)
   // Advisor State
   const [advisorData, setAdvisorData] = useState<AdvisorResponse | null>(null);
   const [isAdvisorGenerating, setIsAdvisorGenerating] = useState(false);
+  const [aqiError, setAqiError] = useState<string | null>(null);
+  const [advisorError, setAdvisorError] = useState<string | null>(null);
 
   // Fetch AQI on city change
-  useEffect(() => {
-    async function loadAqi() {
-      setIsAqiLoading(true);
-      try {
-        const lat = isCustomMode ? parseFloat(customLat) || 28.6139 : selectedCity.latitude;
-        const lon = isCustomMode ? parseFloat(customLon) || 77.2090 : selectedCity.longitude;
-        const cityName = isCustomMode ? 'Custom Urban Coordinate' : selectedCity.name;
+  const loadAqi = React.useCallback(async () => {
+    setIsAqiLoading(true);
+    setAqiError(null);
+    try {
+      const lat = isCustomMode ? parseFloat(customLat) || 28.6139 : selectedCity.latitude;
+      const lon = isCustomMode ? parseFloat(customLon) || 77.2090 : selectedCity.longitude;
+      const cityName = isCustomMode ? 'Custom Urban Coordinate' : selectedCity.name;
 
-        const res = await fetch(`/api/aqi?lat=${lat}&lon=${lon}&city=${encodeURIComponent(cityName)}`);
-        if (res.ok) {
-          const data: AtmosphericData = await res.json();
-          setAtmosphericData(data);
-        }
-      } catch (err) {
-        console.error('Failed to load atmospheric data:', err);
-      } finally {
-        setIsAqiLoading(false);
+      const res = await fetch(`/api/aqi?lat=${lat}&lon=${lon}&city=${encodeURIComponent(cityName)}`);
+      if (!res.ok) {
+        throw new Error(`Atmospheric API responded with status ${res.status}`);
       }
+      const data: AtmosphericData = await res.json();
+      setAtmosphericData(data);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Failed to load atmospheric telemetry';
+      console.error('Failed to load atmospheric data:', err);
+      setAqiError(msg);
+    } finally {
+      setIsAqiLoading(false);
     }
-    loadAqi();
   }, [selectedCity, isCustomMode, customLat, customLon]);
+
+  useEffect(() => {
+    loadAqi();
+  }, [loadAqi]);
 
   // Generate Advisory Guidance
   const handleGenerateAdvice = async () => {
     if (!atmosphericData) return;
     setIsAdvisorGenerating(true);
+    setAdvisorError(null);
 
     try {
       const userProfilePayload: UserProfile = {
@@ -103,12 +111,17 @@ export default function AirAdvisorStudio({ currentLang }: AirAdvisorStudioProps)
         }),
       });
 
-      if (res.ok) {
-        const data: AdvisorResponse = await res.json();
-        setAdvisorData(data);
+      if (!res.ok) {
+        const errorJson = await res.json().catch(() => ({}));
+        throw new Error(errorJson.error || `Advisor engine error (status ${res.status})`);
       }
+
+      const data: AdvisorResponse = await res.json();
+      setAdvisorData(data);
     } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Failed to synthesize advisory guidance';
       console.error('Advisor generation error:', err);
+      setAdvisorError(msg);
     } finally {
       setIsAdvisorGenerating(false);
     }
@@ -162,6 +175,28 @@ export default function AirAdvisorStudio({ currentLang }: AirAdvisorStudioProps)
               </div>
               <span className="caption-4 text-emerald-400 font-mono">100% REAL TIME</span>
             </header>
+
+            {/* Telemetry Error Alert if Occurred */}
+            {aqiError && (
+              <div
+                role="alert"
+                aria-live="assertive"
+                className="bg-surface-amber/20 border border-amber-800/60 rounded-xl p-150 mb-200 text-center"
+              >
+                <div className="flex items-center justify-center gap-50 text-amber-300 caption-2 font-medium mb-50">
+                  <Warning size={18} weight="bold" aria-hidden="true" />
+                  <span>Atmospheric Telemetry Sync Interrupted</span>
+                </div>
+                <p className="caption-5 text-neutral-400 mb-100">{aqiError}</p>
+                <button
+                  type="button"
+                  onClick={() => loadAqi()}
+                  className="inline-flex items-center gap-50 bg-surface-2 hover:bg-surface-3 text-white border border-border-default py-25 px-75 rounded-md caption-4 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                >
+                  Retry Telemetry Sync
+                </button>
+              </div>
+            )}
 
             {/* Inversion Alert Banner if Active */}
             {atmosphericData?.isInversion && (
@@ -256,6 +291,29 @@ export default function AirAdvisorStudio({ currentLang }: AirAdvisorStudioProps)
 
         {/* Right Column: AI Guidance, Actions & Direct Impact Visualizer */}
         <div className="lg:col-span-7 flex flex-col gap-300">
+          {/* Advisory Error Alert if Occurred */}
+          {advisorError && (
+            <div
+              role="alert"
+              aria-live="assertive"
+              className="bg-surface-amber/20 border border-amber-800/60 rounded-xl p-200 text-center"
+            >
+              <div className="flex items-center justify-center gap-50 text-amber-300 caption-2 font-medium mb-50">
+                <Warning size={18} weight="bold" aria-hidden="true" />
+                <span>Advisory Generation Notice</span>
+              </div>
+              <p className="caption-4 text-neutral-300 mb-100">{advisorError}</p>
+              <button
+                type="button"
+                onClick={handleGenerateAdvice}
+                disabled={isAdvisorGenerating}
+                className="inline-flex items-center gap-50 bg-white hover:bg-neutral-200 text-black py-50 px-100 rounded-md caption-3 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Retry Synthesis
+              </button>
+            </div>
+          )}
+
           {!advisorData && (
             <div className="bg-surface-1 border border-border-default rounded-2xl p-400 text-center flex flex-col items-center justify-center min-h-[420px]">
               <div className="w-12 h-12 rounded-full bg-surface-2 flex items-center justify-center mb-200 border border-border-subtle">

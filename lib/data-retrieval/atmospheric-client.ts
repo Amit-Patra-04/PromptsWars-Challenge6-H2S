@@ -203,16 +203,18 @@ async function fetchWithRetryAndTimeout(
       }
 
       return response;
-    } catch (err: any) {
+    } catch (err: unknown) {
       clearTimeout(timeoutHandle);
 
-      if (err.name === 'AbortError') {
+      if (err instanceof Error && err.name === 'AbortError') {
         lastError = new AtmosphericTimeoutError(
           `Request to atmospheric endpoint timed out after ${timeoutMs}ms`,
           timeoutMs
         );
-      } else {
+      } else if (err instanceof Error) {
         lastError = err;
+      } else {
+        lastError = new AtmosphericError(String(err));
       }
 
       if (attempt < maxRetries && !(err instanceof AtmosphericRateLimitError)) {
