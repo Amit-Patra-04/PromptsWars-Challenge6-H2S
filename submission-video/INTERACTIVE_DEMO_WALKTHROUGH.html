@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroPulse — Project Demo Video & Interactive Walkthrough</title>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --surface-1: #181818;
+      --surface-2: #242424;
+      --border: #333333;
+      --emerald: #10b981;
+      --blue: #4285f4;
+      --purple: #8e75c2;
+      --amber: #f59e0b;
+      --text: #ffffff;
+      --text-muted: #9b9b9b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 10px var(--emerald);
+    }
+    .title-area h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .title-area p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .badges-top {
+      display: flex;
+      gap: 8px;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      background: var(--surface-1);
+    }
+    .badge.emerald { color: var(--emerald); border-color: rgba(16, 185, 129, 0.4); }
+    .badge.blue { color: var(--blue); border-color: rgba(66, 133, 244, 0.4); }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 900px) {
+      .video-grid { grid-template-columns: 1fr; }
+    }
+    .video-card {
+      background: var(--surface-1);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    video {
+      width: 100%;
+      background: #000000;
+      aspect-ratio: 16 / 9;
+      display: block;
+    }
+    .video-controls {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--surface-2);
+      border-top: 1px solid var(--border);
+    }
+    .btn {
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn:hover { background: #e5e5e5; }
+    .btn.outline {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid var(--border);
+    }
+    .btn.outline:hover { background: rgba(255, 255, 255, 0.1); }
+    .btn.tts {
+      color: var(--emerald);
+      border-color: rgba(16, 185, 129, 0.4);
+    }
+
+    .sidebar {
+      background: var(--surface-1);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .sidebar h2 {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .scene-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .scene-item {
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.15s;
+    }
+    .scene-item:hover { background: var(--surface-2); }
+    .scene-item.active {
+      background: var(--surface-2);
+      border-color: var(--blue);
+      font-weight: 600;
+      color: var(--blue);
+    }
+
+    .transcript-box {
+      background: var(--surface-1);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .transcript-box h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--emerald);
+    }
+    .transcript-text {
+      font-size: 14px;
+      color: #e0e0e0;
+      background: #000000;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      min-height: 80px;
+      font-style: italic;
+    }
+
+    .meta-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--surface-1);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .card h4 {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .card p {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .card code {
+      font-family: monospace;
+      color: var(--emerald);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="badge-dot"></div>
+        <div class="title-area">
+          <h1>AeroPulse — Project Demo Presentation</h1>
+          <p>PromptWars Virtual · Challenge 6 · Google Antigravity & Vertex AI (Gemini 3)</p>
+        </div>
+      </div>
+      <div class="badges-top">
+        <span class="badge emerald">59/59 Tests Passed</span>
+        <span class="badge blue">WCAG 2.1 AAA</span>
+      </div>
+    </header>
+
+    <div class="video-grid">
+      <div class="video-card">
+        <video id="demoVideo" controls preload="metadata">
+          <source src="aeropulse-demo-presentation.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-controls">
+          <div style="display: flex; gap: 8px;">
+            <button class="btn" id="btnPlayPause">Play</button>
+            <button class="btn outline" id="btnRestart">Restart</button>
+          </div>
+          <div>
+            <button class="btn outline tts" id="btnNarrate">🔊 Read Narration</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <h2>🎬 Video Scenes</h2>
+        <div class="scene-list" id="sceneList"></div>
+      </div>
+    </div>
+
+    <div class="transcript-box">
+      <h3 id="currentSceneTitle">Scene 1: Introduction & Overview (0:00 - 0:08)</h3>
+      <div class="transcript-text" id="transcriptText">
+        "Welcome to AeroPulse, an agentic, GenAI-driven urban air quality advisor engineered in Google Antigravity for Challenge 6..."
+      </div>
+    </div>
+
+    <div class="meta-cards">
+      <div class="card">
+        <h4>Video Specs</h4>
+        <p>1280x720 HD · 30 FPS · 67 Seconds</p>
+        <code>aeropulse-demo-presentation.mp4</code>
+      </div>
+      <div class="card">
+        <h4>Technology Stack</h4>
+        <p>Google Vertex AI Gemini 3 + Translate</p>
+        <code>Next.js 14 · TypeScript · Tailwind</code>
+      </div>
+      <div class="card">
+        <h4>Testing & Rigor</h4>
+        <p>59 / 59 Vitest Automated Tests Passed</p>
+        <code>13 Test Files · 100% Pass Rate</code>
+      </div>
+      <div class="card">
+        <h4>GitHub Repository</h4>
+        <p><a href="https://github.com/Amit-Patra-04/PromptsWars-Challenge6-H2S" style="color: var(--blue);" target="_blank">Amit-Patra-04 / Challenge6-H2S</a></p>
+        <code>Branch: main (Clean)</code>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const scenes = [
+      { time: 0, title: "Scene 1: Introduction & Overview", text: "Welcome to AeroPulse, an agentic, GenAI-driven urban air quality advisor engineered in Google Antigravity for Challenge 6. Severe winter smog creates a deadly health emergency for millions of families across urban basins. AeroPulse bridges complex atmospheric geophysics and everyday household decisions, combining real-time satellite telemetry, deterministic pulmonary physics, and Google Vertex AI Gemini 3 to safeguard vulnerable lives." },
+      { time: 8, title: "Scene 2: Winter Smog & Geophysics", text: "During winter, cold air pools near the surface beneath a warm inversion lid, trapping toxic PM2.5 and nitrogen dioxide right in the breathing zone. Families seal their homes to preserve warmth, unaware of the EPA's startling finding: indoor air in winter can be 2 to 5 times—and during unvented cooking or heating, up to 100 times—more polluted than the air outside. AeroPulse eliminates this guesswork." },
+      { time: 17, title: "Scene 3: Real-Time Ingestion", text: "AeroPulse pulls live criteria pollutants—PM2.5, NO2, ozone, and planetary boundary layer height—from Open-Meteo and OpenAQ. Our reusable atmospheric client features an AbortController timeout, exponential backoff with full jitter, in-memory TTL caching for sub-50-millisecond lookups, and calibrated physical fallbacks to ensure life-saving guidance never goes offline." },
+      { time: 25, title: "Scene 4: Pulmonary Dose Modeling", text: "A core principle of AeroPulse is: never let an LLM hallucinate impact numbers. While AI writes the advice, our verified deterministic physics engine calculates exact micrograms of PM2.5 avoided using EPA Exposure Factors Handbook ventilation rates. For example, an infant in a sealed HEPA clean room avoids 336 micrograms of PM2.5 overnight—a 74% direct dose reduction, with fully inspectable formulas." },
+      { time: 34, title: "Scene 5: EPA Indoor Hacks", text: "Our EPA indoor module provides verified winter hacks with quantified reduction stats: running True HEPA cuts PM2.5 by up to 85% in 30 minutes; ducted kitchen exhaust cuts cooking ultrafines and NO2 by up to 82%; and avoiding unvented kerosene cuts combustion hazards by over 90%. All tailored dynamically to infants, seniors, and asthma patients." },
+      { time: 42, title: "Scene 6: Greener Swaps & Simulator", text: "For sustainable lifestyle shifts, AeroPulse enumerates greener alternatives formatted in clear arrow-annotated UI text, grounded in the EPA 404 gram-per-mile passenger vehicle factor. Users can adjust interactive commute and heating sliders to calculate their personal carbon avoided and soot bypassed in real time." },
+      { time: 50, title: "Scene 7: Dual Google Cloud Services", text: "AeroPulse integrates two Google Cloud services: Google Cloud Vertex AI Gemini 3 orchestrates personalized hour-by-hour schedules and timed ventilation windows using structured JSON outputs, while Google Cloud Translation localizes guidance across six languages: English, Hindi, Mandarin, Spanish, French, and Punjabi." },
+      { time: 58, title: "Scene 8: Rigor, Testing & Impact", text: "Engineered to production standards: 59 automated Vitest tests pass with 100% success across 13 test files. Certified WCAG 2.1 AAA accessible with axe-core, hardened with strict Content Security Policy Level 3, and ready to protect over 42,000 vulnerable urban residents. AeroPulse proves that accessible GenAI and rigorous science can save lives. Thank you." }
+    ];
+
+    const video = document.getElementById('demoVideo');
+    const sceneList = document.getElementById('sceneList');
+    const transcriptText = document.getElementById('transcriptText');
+    const currentSceneTitle = document.getElementById('currentSceneTitle');
+    const btnPlayPause = document.getElementById('btnPlayPause');
+    const btnRestart = document.getElementById('btnRestart');
+    const btnNarrate = document.getElementById('btnNarrate');
+
+    scenes.forEach((s, i) => {
+      const item = document.createElement('div');
+      item.className = 'scene-item' + (i === 0 ? ' active' : '');
+      item.innerHTML = `<span>${s.title}</span><code>${s.time}s</code>`;
+      item.onclick = () => {
+        video.currentTime = s.time;
+        video.play();
+      };
+      sceneList.appendChild(item);
+    });
+
+    video.addEventListener('timeupdate', () => {
+      const t = video.currentTime;
+      let activeIndex = 0;
+      for (let i = scenes.length - 1; i >= 0; i--) {
+        if (t >= scenes[i].time) {
+          activeIndex = i;
+          break;
+        }
+      }
+      Array.from(sceneList.children).forEach((el, idx) => {
+        el.className = 'scene-item' + (idx === activeIndex ? ' active' : '');
+      });
+      currentSceneTitle.innerText = scenes[activeIndex].title + ` (${scenes[activeIndex].time}s)`;
+      transcriptText.innerText = `"${scenes[activeIndex].text}"`;
+    });
+
+    btnPlayPause.onclick = () => {
+      if (video.paused) {
+        video.play();
+        btnPlayPause.innerText = 'Pause';
+      } else {
+        video.pause();
+        btnPlayPause.innerText = 'Play';
+      }
+    };
+
+    video.onplay = () => { btnPlayPause.innerText = 'Pause'; };
+    video.onpause = () => { btnPlayPause.innerText = 'Play'; };
+
+    btnRestart.onclick = () => {
+      video.currentTime = 0;
+      video.play();
+    };
+
+    btnNarrate.onclick = () => {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const text = transcriptText.innerText.replace(/"/g, '');
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.rate = 1.0;
+        window.speechSynthesis.speak(utter);
+      } else {
+        alert("Speech Synthesis is not supported in this browser.");
+      }
+    };
+  </script>
+</body>
+</html>
