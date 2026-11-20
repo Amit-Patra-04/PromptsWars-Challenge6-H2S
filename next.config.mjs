@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const contentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval';
+  script-src 'self' 'unsafe-inline';
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src 'self' https://fonts.gstatic.com data:;
   img-src 'self' data: https: blob:;
   connect-src 'self' https://air-quality-api.open-meteo.com https://api.open-meteo.com https://generativelanguage.googleapis.com https://*.googleapis.com https://openaq.org;
+  object-src 'none';
   frame-ancestors 'none';
   base-uri 'self';
   form-action 'self';

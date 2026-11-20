@@ -47,6 +47,17 @@ describe('API Route Handlers Integration Tests', () => {
       expect(response.headers.get('Cache-Control')).toContain('max-age=3600');
     });
 
+    it('handles CADR boundary conditions at minimum room area (5m²)', async () => {
+      const request = new NextRequest('http://localhost:3000/api/cadr?roomAreaSqM=5&ceilingHeightM=2.0&targetACH=2');
+      const response = await getCadrHandler(request);
+
+      expect(response.status).toBe(200);
+      const data = await response.json();
+      expect(data.roomVolumeM3).toBeCloseTo(10, 0);
+      expect(data.requiredCADRCfm).toBeGreaterThan(0);
+      expect(data.crBoxAdequate).toBe(true);
+    });
+
     it('returns 400 Bad Request when target ACH exceeds safe physical limits', async () => {
       const request = new NextRequest('http://localhost:3000/api/cadr?roomAreaSqM=30&targetACH=25');
       const response = await getCadrHandler(request);
@@ -133,6 +144,39 @@ describe('API Route Handlers Integration Tests', () => {
       expect(response.status).toBe(400);
       const data = await response.json();
       expect(data.error).toBe('Invalid user profile data');
+    });
+
+    it('returns 400 Bad Request when atmospheric data payload is missing or invalid', async () => {
+      const payloadWithMissingWeather = {
+        profile: {
+          cohorts: ['elderly'],
+          dwelling: 'detached_house',
+          heating: 'heat_pump',
+          commute: 'solo_car_gas',
+          roomAreaSqM: 25,
+          ceilingHeightM: 2.5,
+          hasAirPurifier: false,
+          city: 'London',
+          latitude: 51.5074,
+          longitude: -0.1278,
+        },
+        weather: {
+          city: 'London',
+          // missing required fields
+        },
+        language: 'en',
+      };
+
+      const request = new NextRequest('http://localhost:3000/api/advisor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payloadWithMissingWeather),
+      });
+
+      const response = await postAdvisorHandler(request);
+      expect(response.status).toBe(400);
+      const data = await response.json();
+      expect(data.error).toBe('Valid atmospheric data is required');
     });
   });
 });

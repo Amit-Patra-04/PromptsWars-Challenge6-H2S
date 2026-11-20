@@ -1,6 +1,23 @@
 {
   "name": "aeropulse-urban-air-advisor",
   "version": "1.0.0",
+  "description": "Agentic GenAI urban air-quality advisor for winter smog episodes, combining Open-Meteo atmospheric telemetry, deterministic pulmonary inhalation modeling, and Google Vertex AI Gemini 3 prompt orchestration.",
+  "author": "Amit Patra",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amit-Patra-04/PromptsWars-Challenge6-H2S.git"
+  },
+  "keywords": [
+    "air-quality",
+    "pm25",
+    "gemini-3",
+    "vertex-ai",
+    "urban-health",
+    "atmospheric-inversion",
+    "clean-air",
+    "nextjs"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
